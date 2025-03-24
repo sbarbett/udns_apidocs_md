@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Resource Record Sets</title>
+        <link href="../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1 class="Heading1"><a name="_Ref442345895"></a><a name="_Toc36651635"></a>Resource Record Sets</h1>
+                                    <p class="BodyText">A zone contains one or more Resource Records (RRs). A grouping of Resource Records of the same type at the same domain name (for example, all A Records at example.com.) is called a Resource Record Set (RRSet). The domain name containing the RRSet is the owner of the RRSet; the domain name is the ownerName. </p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="Resource"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref462834288"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Resource Record Set (RRSet) DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The basic unit for resource record manipulation in the REST API is the RRSet. An RRSet contains the data for all resource records present at the same owner name&#160;(label), and with the same type and class (all records in UltraDNS have IN class). </p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">The UltraDNS REST API enforces the same TTL for all records in an RRSet (with the exception of a directional pool).</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">Rather than trying to specify a custom structure for each different resource record type, the data for all resource records is represented by an "rdata" field. This field's contents map to the data supplied in the BIND presentation format for a resource record.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If an RRSet is associated with an UltraDNS pool, the âprofileâ field is present and contains pool specific attributes.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText">The RRSet DTO is used in the List (GET), Create (POST), and Update (PATCH) RRSets API calls. When a user is submitting an RRSet DTO to the server, the owner name and rrtype are not required, because they are specified by the URI. If present, they will be ignored.</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="Caption"><a name="_Ref524097750"></a> <a name="RRSet_DTO"></a>RRSet DTO</p>
+                                            <table class="table_1" style="border-left-style: #d9d9d9;border-left-width: 1pt;border-left-color: #7f7f7f;border-right-style: #d9d9d9;border-right-width: 1pt;border-right-color: #7f7f7f;border-top-style: #d9d9d9;border-top-width: 1pt;border-top-color: #7f7f7f;border-bottom-style: #d9d9d9;border-bottom-width: 1pt;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;width: 70%;">
+                                                <col class="col_28" style="width: 110pt;" />
+                                                <col class="col_45" style="width: 273px;" />
+                                                <col class="col_64" style="width: 161px;" />
+                                                <col class="col_27" style="width: 363px;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_1" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Attribute</p>
+                                                        </th>
+                                                        <th class="th_2" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Description</p>
+                                                        </th>
+                                                        <th class="th_2" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Type</p>
+                                                        </th>
+                                                        <th class="th_2" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Required?</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_7" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">ownerName</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The domain name of the owner of the RRSet. Can be either:</p>
+                                                            <ul style="list-style-type: square;">
+                                                                <li>Fully Qualified Domain Name (FQDN)</li>
+                                                                <li>Relative Domain Name</li>
+                                                            </ul>
+                                                            <p class="TableBody">If a FQDN, it must be contained within the zone name FQDN.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">NO for PUT, POST, or PATCH calls. Ignored if present.</p>
+                                                            <p class="TableBody">Not present (and ignored if present) if this RRSet is embedded inside of an Owner structure.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_7" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">rrtype</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Resource Record Type for the RRSet.</p>
+                                                            <p class="TableBody">Must be formatted as the well-known resource record type (A, AAAA, TXT, etc.) and the corresponding number for the type, between 1 and 65535 or a known resource record name (A, AAAA, SRV, etc.).</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">NO for PUT, POST, or PATCH calls. Ignored if present.</p>
+                                                            <p class="TableBody">Not present (and ignored if present) if this RRSet is embedded inside of an Owner structure.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_7" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">ttl</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The time to live (in seconds) for all records in the RRSet.</p>
+                                                            <p class="TableBody">Must be a value between 0 and 2147483647, inclusive.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Integer.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Should be included in PUT, POST or PATCH calls. </p>
+                                                            <p class="TableBody">If TTL is not specified, the value set at the account level (either for record type or global setting) will be used.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_7" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">rdata</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The data for the records in the RRSet.</p>
+                                                            <p class="TableBody">Must use the BIND presentation format for the specified rrtype.</p>
+                                                            <p class="TableBody_3">For MX, NS, CNAME, PTR, and APEXALIAS record types, the rdata value cannot be relative to the zone name. It must be a FQDN.</p>
+                                                            <p class="TableBody_15">If rrtype is MX, entering â0 .â will create a NULL MX record, implying that âNo Serviceâ is available for the server / record.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Array.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">REQUIRED for PUT, POST, or PATCH calls. Must include BIND formatted data.</p>
+                                                            <p class="TableBody">&#160;</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="TableBody">Multiple non-Null MX records with the same domain/host label are supported.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="TableBody">Only 1 Null-MX record is supported per domain/host.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="TableBody">A domain/host cannot contain both Null and Non-Null MX records.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_7" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">systemGenerated</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Indicates whether the record in an rdata list is system generated or not. </p>
+                                                            <p class="TableBody">It represents the Boolean value that corresponds to the record in the list (in same order the records are returned).</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Array (Boolean).</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Will be returned for GET requests when used as the query parameter systemGeneratedStatus. </p>
+                                                            <p class="TableBody">If the query parameter is set to true, then the attribute name will be returned in the response. </p>
+                                                            <p class="TableBody">Ignored for PUT/PATCH/POST requests.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_7" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>ultra2SystemGenerated		</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>Indicates whether the nameserver in an rdata list is generated by the Ultra2 system or not.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>	Array
+(Boolean) corresponding to the nameserver in the list.</p>
+                                                        </td>
+                                                        <td class="td_8" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>ultra2SystemGenerated will only be returned for those accounts which have Ultra2 enabled, as well as the associated NS records.
+</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="Examples">JSON Example: Returning an A Record in a Zone</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"ownerName": "a.domain.name.",<br />&#160;&#160;&#160;&#160;"rrtype": "A (1)",<br />&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"1.2.3.4"<br />&#160;&#160;&#160;&#160;]<br />}</p>
+                                            <p class="Examples">JSON Example: Create a NULL MX Record</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"ownerName": "a.domain.name.",<br />&#160;&#160;&#160;&#160;"rrtype": "MX (15)",<br />&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;"rdata": ["0 ."]<br />}</p>
+                                            <p class="Examples">JSON Example: Return an A Record in a Zone with systemGeneratedStatus true</p>
+                                            <p class="Code">GET: https://api.ultradns.com/zones/{zoneName}/rrsets/A/a.domain.name.?systemGeneratedStatus=true</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"ownerName": "a.domain.name.",<br />&#160;&#160;&#160;&#160;"rrtype": "A (1)",<br />&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"1.2.3.4"<br />&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160; "systemGenerated": [false]<br />}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="Examples">JSON&#160;Example:&#160;Response results for Ultra2 enabled account</p>
+                                            <p class="Code">{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;"zoneName": "abc.com.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;"rrSets": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ownerName": "abc.com.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rrtype": "NS (2)",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ttl": 86400,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdata": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ns1.hostingsvcs.com.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ns2.hostingsvcs.com.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"udns1.ultradns.net.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"udns2.ultradns.net."</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"systemGenerated": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;true,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;true,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;true,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;true</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ultra2SystemGenerated": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;true,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;true,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;false,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;false</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;"queryInfo": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"q": "kind:ALL",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sort": "OWNER",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"limit": 50</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resultInfo": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"totalCount": 1,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"offset": 0,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"returnedCount": 1</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="RRSetLis"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref526163682"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">RRSetList DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>
+                                                <p class="BodyText">This is returned when retrieving multiple RRSets from the server. It is not used for creating or updating RRSets.</p>
+                                            </p>
+                                            <p class="Caption"> RRSetList DTO</p>
+                                            <table class="table_1" style="width: 75%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_65" style="width: 154pt;" />
+                                                <col class="col_66" style="width: 663px;" />
+                                                <col class="col_9" style="width: 64pt;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_3" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Field</p>
+                                                        </th>
+                                                        <th class="th_4" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Description</p>
+                                                        </th>
+                                                        <th class="th_4" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="tr_9">
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">zoneName</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">The FQDN for the zone.</p> </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">String</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr_9">
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">rrsets</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The list of <span class="CrossReference"><a href="#_Ref462834288" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Resource Record Set (RRSet) DTO</a></span>.</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Array</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr_9">
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">queryInfo/q</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">The query used to construct the list.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">String</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">queryInfo/sort</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">The sort column used to order the list.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">String</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">queryInfo/reverse</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Whether the list is ascending (false) or descending (true).</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Boolean</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">queryInfo/limit</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">The maximum number of rows requested.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Integer</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">resultInfo/totalCount</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Count of all zones in the system for the specified query.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Integer</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">resultInfo/offset</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">The position in the list for the first returned element (0 based).</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Integer</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">resultInfo/returnedCount</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBOdy">
+                                                                    <p class="TableBody">The number of records returned.</p>
+                                                                </p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Integer</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref516840026"></a><a name="_Toc36651637"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">List all RRSets in a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This call provides a list of all RRSets in a zone, or if specific query parameters are used, a list of the RRSets in a zone that match the provided criteria.</p>
+                                            <p class="BodyText">The {zoneName} identified in the call should be the name of the domain whose RR sets you want to return.</p>
+                                            <p class="BodyText"><b>Method and URI:</b>
+                                            </p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}/rrsets</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: The following parameters are available to be sent with the call.</p>
+                                            <p class="Caption"><a name="_Ref268782775"></a><a name="_Ref268782776"></a>List RRsets in Zone</p>
+                                            <table class="table_1" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;width: 70%;">
+                                                <col class="col_67" style="width: 142pt;" />
+                                                <col class="col_68" style="width: 618px;" />
+                                                <col class="col_5" style="width: 68pt;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_3" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Parameter</p>
+                                                        </th>
+                                                        <th class="th_4" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Description</p>
+                                                        </th>
+                                                        <th class="th_4" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1" style="text-align: left;">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">q</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The query used to construct the list. Query operators are:</p>
+                                                            <ul style="list-style-type: square;">
+                                                                <li style="font-family: 'PT Sans';">TTL: Exact match for the TTL value. Only valid for RECORDS RRSets type; ignored for the other kinds of RRSets (see below).</li>
+                                                                <li style="font-family: 'PT Sans';">Owner: Partial match to an owner name. Valid for all RRSets.</li>
+                                                                <li style="font-family: 'PT Sans';">Value: Partial match for the rdata for a resource record. Only valid for the RECORDS RRSet type; ignored for other kinds of RRSets (see below).</li>
+                                                                <li style="font-family: 'PT Sans';">Kind (defaults to ALL): The kind of RRSets or Pools that will be returned. One or more types can be specified if separated by commas. Valid values are:</li>
+                                                                <ul style="list-style-type: circle;">
+                                                                    <li>
+                                                                        <p>&#160; ALL (returns all kinds)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>&#160;RECORDS</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>POOLS (returns all pool kinds)&#160;</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>RD_POOLS</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>DIR_POOLS</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>SB_POOLS&#160;&#160;</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>TC_POOLS&#160;&#160;</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>String</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">offset</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The position in the list for the first returned element (0 based). Default is 0.</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Integer</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">limit</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The maximum number of rows requested. Default is 100.</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Integer</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">sort</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The sort column used to define the order of the list. Valid values are: </p>
+                                                            <ul style="list-style-type: square;">
+                                                                <li style="font-size: 10pt;">OWNER (default)</li>
+                                                                <li style="font-size: 10pt;">TTL</li>
+                                                                <li style="font-size: 10pt;">TYPE (specifies the Record type)</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">String</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">reverse</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">List is sorted in Ascending order with false by default. true will sort the list in Descending order by the sort column specified (or by OWNER if no sort value is entered).</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Boolean. Default is false.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">systemGeneratedStatus</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Used to indicate whether the records in rrdata are system generated or not. Returns the systemGenerated attribute in an RRSet response. </p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Boolean. Default is false.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="Examples">JSON Example: List all RRSets for a Zone</p>
+                                            <p class="Code">{<br />&#160; "zoneName": "primary-example.com.",<br />&#160; "rrSets": [<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "arecord.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "A (1)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "1.1.1.1"<br />&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "arecord.primary-example.com1.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "A (1)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "1.1.1.1"<br />&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "arecord.primarytest.com.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "A (1)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "2.2.2.2"<br />&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "arecord.primarytest.com.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "AAAA (28)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "fdda:5cc1:23:4:0:0:0:1f"<br />&#160;&#160;&#160;&#160;&#160; ]<br />},</p>
+                                            <p class="Examples">URL Example: List RRSets in a Zone with Parameters</p>
+                                            <p class="Code">https://api.ultradns.com/zones/example.com/rrsets?q=ttl:300+owner:test+kind:RECORDS&amp;sort=TYPE&amp;reverse=true@systemGeneratedStatus=true</p>
+                                            <p class="BodyText">The example URL shown above does the following:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">Returns all standard RRSets (no pools) for the domain âexample.comâ that have a TTL of 300, </p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">An owner name that includes the string âtestâ, </p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">Sorts the list in descending order by record type.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Body</b>:&#160;None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with an <span class="CrossReference"><a href="#_Ref526163682" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;font-style: normal;text-decoration: underline;">RRSetList DTO</a></span> in the body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not a valid zone name.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to read the zone.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="Examples">JSON Example: List RRSets with Query Parameters</p>
+                                            <p class="Code">{<br />&#160; "zoneName": "primary-example.com.",<br />&#160; "rrSets": [<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "srvrecord.primarytest.com.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "SRV (33)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "1 5 81 test.primarytest.com."<br />&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160; "systemGenerated": [false, false]<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "spfrecord.primarytest.com.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "SPF (99)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "\"spfrecorddata\""<br />&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160; "systemGenerated": [false]<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "rprecord.primarytest.com.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "RP (17)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "mail1.primary-example.com. text1.primary-example.com."<br />&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160; "systemGenerated": [false, true]<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160; "ownerName": "ptrrecord.primarytest.com.primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160; "rrtype": "PTR (12)",<br />&#160;&#160;&#160;&#160;&#160; "ttl": 500,<br />&#160;&#160;&#160;&#160;&#160; "rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "test1.primarytest.com.primary-example.com."<br />&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160; "systemGenerated": [false]<br />},</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651638"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">List all RRSets by Type</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This call allows you to list all RRSets of a particular Record type for a specified zone. This differs from the above <span class="CrossReference"><a href="#_Ref516840026" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">List all RRSets in a Zone</a></span> because the above call returns RRSets of records based on the kind of set or pool, while this call returns RRSets based on the record type. </p>
+                                            <p class="BodyText">The Type can be a DNS record name (for example A, TXT, AAAA, SRV), or a number value that corresponds to a resource record type.</p>
+                                            <p class="BodyText_2">Method and URI: </p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}/rrsets/{recordType} </p>
+                                            <p class="BodyText">OR</p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}/rrsets/{recordTypeNumber}</p>
+                                            <p class="Examples">URL Example: List All RRSets of Type A in a Zone</p>
+                                            <p class="Code">https://api.ultradns.com/zones/example.com/rrsets/A</p>
+                                            <p class="BodyText">This returns all A records in the zone example.com.</p>
+                                            <p class="Examples">URL Example: List All RRSets of Type 16 (TXT) in a Zone</p>
+                                            <p class="Code">https://api.ultradns.com/zones/example.com/rrsets/16</p>
+                                            <p class="BodyText">This returns all TXT (resource record type code 16) in the zone example.com.</p>
+                                            <p class="BodyText"><b>Parameters</b>: <span class="CrossReference"><a href="#_Ref268782776" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">List RRsets in Zone</a></span> in zone lists the parameters available to be sent with the call.</p>
+                                            <p class="BodyText"><b>Body</b>:&#160;None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with an <span class="CrossReference"><a href="#_Ref526163682" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">RRSetList DTO</a></span>in the body content, containing only RRSets of the specified type.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to read zones.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If type is invalid.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref399844854"></a><a name="_Toc36651639"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">List all RRSets of a Type for an Owner</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This call returns a list of RRSets of a specified type for the Owner Name provided in the call.</p>
+                                            <p class="BodyText">The identified Type can be any of the following:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">A DNS record-type name (A, TXT, AAAA, SRV),</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">A number corresponding to a resource record type (from 1 to 65535). </p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText">OR<br /></p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">The special reserved word "ANY", which will return all RRSets for the specified owner name.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><i>Owner name</i> can be a relative name (does not include the zone name), or an absolute name (includes the zone name).</p>
+                                            <p class="BodyText">Note the following about owner names and constructing this call:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">Using a <b>q</b> query parameter with an owner name is automatically a string-match search; it will return all owner names that contain the specified string.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">When the owner name is specified as part of the URI, the search will return only the RRSets for the owner name that exactly matches the specified name. </p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText">See the examples listed below for more information.</p>
+                                            <p class="BodyText">The list all RRSets of a type for an owner is a GET call and is constructed as follows:</p>
+                                            <p class="BodyText"><b>Method and URI</b>: </p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{ownerName}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example List RRSets of a Type for an Owner: Methods and Results</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">For the following example calls, assume there are A-type records defined at <i>test1.domain.name</i>, <i>test2.domain.name</i>, and <i>test.domain.name</i>. Different call construction will return different results.</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">URL Example 1: Return all A-type RRSets across *test*.domain.com</p>
+                                            <p class="BodyText">For the identified example scenario, the following call returns A-type Resource Record Sets for all three domain.name zones where the owner name contains the string âtestâ:</p>
+                                            <p class="Code">https://api.ultradns.com/zones/domain.name/rrsets/A?q=owner:test</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">URL Example 2: Return all A-type RRSets for âtest.domain.comâ only</p>
+                                            <p class="BodyText">If you construct the call using the same âtestâ string as the owner name, but in the URL instead of as a query parameter, the call looks as follows and returns only the resource record set for test.domain.com.</p>
+                                            <p class="Code">https://api.ultradns.com/zones/domain.name/rrsets/A/test</p>
+                                            <p class="BodyText">For getting the systemGenerated attribute in an RRSet response, the following query parameter needs to be provided:</p>
+                                            <p class="Code">https://api.ultradns.com/zones/domain.name/rrsets/A/test?systemGeneratedStatus=true</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">URL Example 3: Return all RRSets for âtest.domain.comâ only</p>
+                                            <p class="BodyText">Using the âANYâ term for {type} in the call returns all RRSets for the specified zone. The following two examples will return the same results. The first contains an absolute owner name, including the domain name; the second contains a relative owner name, without the domain name.</p>
+                                            <p class="Code">https://api.ultradns.com/zones/domain.name./rrsets/ANY/test.domain.name<br /></p>
+                                            <p class="Code">https://api.ultradns.com/zones/domain.name/rrsets/ANY/test</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with an <span class="CrossReference"><a href="#_Ref526163682" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">RRSetList DTO</a></span> in the body content.</p>
+                                            <p class="Examples">JSON Example: Returned records list for ownerName test.domain.name</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"queryInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sort": "OWNER",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"limit": 100<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"resultInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"totalCount": 2,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"offset": 0,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"returnedCount": 2<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;"zoneName": "domain.name.",<br />&#160;&#160;&#160;&#160;"rrsets": [<br />&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ownerName": "test.domain.name.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "A (1)",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"9.8.7.6"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ownerName": "test.domain.name.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "TXT (16)",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"The quick brown fox jumped over the lazy dog",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"Here is another TXT record in the RRSet"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;],<br />}</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to read zones.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If type is invalid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {ownerName} does not exist.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651640"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Create RRSet for an Owner</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Create RRSet for an Owner call requires you to send an <span class="CrossReference"><a href="#_Ref462834288" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Resource Record Set (RRSet) DTO</a></span> with the call. However, the ownerName and rrtype fields are not required because they are specified in the URI. If the DTO you send does include them, they will be ignored.</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{ownerName}</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">URL Example: Create an A-type RRSet for owner test.domain.name</p>
+                                            <p class="Code">https://api.ultradns.com/zones/domain.name./rrsets/A/test</p>
+                                            <p class="BodyText">The above example creates an A-type resource record set for the owner test.domain.name.</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Must include an <span class="CrossReference"><a href="#_Ref462834288" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Resource Record Set (RRSet) DTO</a></span>.</p>
+                                            <p class="Examples">JSON Example: RRSet DTO for an A-type RRSet for test.domain.name</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"1.2.3.4"<br />&#160;&#160;&#160;&#160;]<br />}</p>
+                                            <p class="BodyText"><b>Response</b>: If creation happens immediately, Status Code 201 is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If creation happens in the background, a Status Code 202 is returned with a status message of âPendingâ, along with an X-Task-Id header in body content.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to write records.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {type} is invalid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {ownerName} is not a valid name.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651641"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Create Zone via BIND File Upload</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This call creates a Zone, rather than individual records within a Zone. The Zone details must be attached in a BIND file, and attached in the body of the call when sent.</p>
+                                            <table style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;border-collapse: collapse;margin-left: 0;margin-right: auto;" class="table_1">
+                                                <col style="width: 85px;" />
+                                                <col style="width: 882px;" />
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p style="text-align: center;">
+                                                                <img src="../Resources/Images/Rest-API_User_Guide/Introduction_57x65.png" class="img_2" style="width: 57;height: 65;" />
+                                                            </p>
+                                                        </td>
+                                                        <td style="vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p><b style="font-style: italic;">New Update</b> â The BIND Upload of zone feature now supports the usage of whitespaces as a hostname in the BIND file. Referring to <a href="https://tools.ietf.org/html/rfc1035">RFC-1035</a>, newly supported behavior is described as follows â âIf an entry for an RR begins with a blank, then the RR is assumed to be owned by the last stated owner. If an RR entry begins with a &lt;domain-name&gt;, then the owner name is reset.â</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="BodyText"><b>Method and URI</b>: </p>
+                                            <p class="Code">PATCH https://api.ultradns.com/zones/{zoneName}/rrsets</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: Requires <span class="CrossReference"><a href="#_Ref462834288" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Resource Record Set (RRSet) DTO</a></span></p>
+                                            <p class="BodyText"><b>Body</b>: You will need to upload/provide the partial BIND file location by changing the <b>KEY</b> parameter to File, and then the <b>Content-Type</b> as multipart/form-data. Click on the <b>Select Files</b> button to upload your BIND file. </p>
+                                            <p class="BodyText"><b>Response</b>: Task should happen in the background, returning a Status Code 202 along with an X-Task-ID header and status message of âPendingâ in the body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you do not have permission to update {zoneName}.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText">Do not add any JSON content or BIND file content as text in the request body. Below is a screenshot example of how to setup the request to upload a partial BIND file.</p>
+                                            <p class="BodyText" style="text-align: left;">
+                                                <img src="../Resources/Images/Rest-API_User_Guide/Create_Zone_via_Bind_Upload.png" />
+                                            </p>
+                                            <p class="Examples">BIND File Example: Create Zone</p>
+                                            <p class="Code">;File created: 12/04/2019 12:07<br />;Record count: 20<br />$ORIGIN upload-test.com.<br />@&#160;&#160;&#160;&#160;86400&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;SOA udns1.ultradns.net. BindZone\.testzone.example.biz. (<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2019041222&#160;&#160;&#160;&#160;;Serial<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;86400&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;;Refresh<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;86400&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;;Retry<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;86400&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;;Expire<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;86400&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;;Minimum<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;)<br />owner3&#160;&#160;&#160;&#160;300&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;NS&#160;&#160;&#160;&#160;ns1.nameserver.com.<br />@&#160;&#160;&#160;&#160;86400&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;NS&#160;&#160;&#160;&#160;udns1.ultradns.net.<br />@&#160;&#160;&#160;&#160;86400&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;NS&#160;&#160;&#160;&#160;udns2.ultradns.net.<br />owner1&#160;&#160;&#160;&#160;100&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;A&#160;&#160;&#160;&#160;12.12.12.12<br />owner4&#160;&#160;&#160;&#160;400&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;CNAME&#160;&#160;&#160;&#160;cname1.com.<br />owner13&#160;&#160;&#160;800&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;MB&#160;&#160;&#160;&#160;mail2.upload-test.com.<br />owner14&#160;&#160;&#160;900&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;WKS&#160;&#160;&#160;&#160;12.12.14.12 6 26<br />owner8&#160;&#160;&#160;&#160;500&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;PTR&#160;&#160;&#160;&#160;test.addr2.com.<br />owner7&#160;&#160;&#160;&#160;403&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;HINFO&#160;&#160;&#160;&#160;"32bits" "windows"<br />owner6&#160;&#160;&#160;&#160;402&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;MX&#160;&#160;&#160;&#160;10 mail2.upload-test.com.<br />owner5&#160;&#160;&#160;&#160;401&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;TXT&#160;&#160;&#160;&#160;"abcdefghijklmnopqrstabcdefghijklmnopqrst"<br />owner12&#160;&#160;&#160;700&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;RP&#160;&#160;&#160;&#160;mail1.addr.arpa. text1.addr.arpa.<br />owner15&#160;&#160;&#160;1000&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;KEY&#160;&#160;&#160;&#160;33 44 44 test<br />owner2&#160;&#160;&#160;&#160;200&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;AAAA&#160;&#160;&#160;&#160;2001:db8:85a3:0:0:8a2e:370:7334<br />owner16&#160;&#160;&#160;1100&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;NXT&#160;&#160;&#160;&#160;test1.upload-test.com. SSHFP<br />owner11&#160;&#160;&#160;602&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;SRV&#160;&#160;&#160;&#160;1 5 81 test.addr.com.<br />owner9&#160;&#160;&#160;&#160;600&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;NAPTR&#160;&#160;&#160;&#160;100 6 "u" "E2U+smtp" "!^.*$!mailto:information@addr.com!i" .<br />owner17&#160;&#160;&#160;1200&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;SSHFP&#160;&#160;&#160;&#160;32 44 AD<br />owner10&#160;&#160;&#160;601&#160;&#160;&#160;&#160;IN&#160;&#160;&#160;&#160;SPF&#160;&#160;&#160;&#160;"aaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaax2rgthhyuiyaaa" "x2rgthhyuiy" </p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651642"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Create/Update Multiple RRSets in a Zone via BIND File Upload</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>This call adds new RRSets in an identified zoneName with the information in an attached BIND file. Any conflicts with existing resource record sets will result in a 202 response, but no changes will be made.</p>
+                                            <p>The BIND file must be included in the body sent with the call.</p>
+                                            <p class="BodyText"><b>Method and URI</b>: </p>
+                                            <p class="Code">PATCH https://api.ultradns.com/zones/{zoneName}/rrsets</p>
+                                            <p class="Examples">URL Example: Add/Updated RRSets to an Existing Zone via BIND File</p>
+                                            <p class="Code">PATCH https://api.ultradns.com/zones/domain.name./rrsets</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: You will need to upload/provide the partial BIND file location by changing the <b>KEY</b> parameter to <b>File</b>, and then the <b>Content-Type</b> as <b>multipart/form-data</b>. Click on the <b>Select Files</b> button to upload your BIND file.</p>
+                                            <p class="BodyText">Do not add any JSON content or BIND file content as text in the request body. Below is a screenshot example of how to setup the request to uploa a partial BIND file.</p>
+                                            <p class="BodyText" style="text-align: left;">
+                                                <img src="../Resources/Images/Rest-API_User_Guide/Create_Multiple_RRSET_via_BIND_Upload.png" />
+                                            </p>
+                                            <p class="Caption_1">
+                                                <br />
+                                            </p>
+                                            <p class="BodyText"><b>Response</b>: Task should happen in the background, returning a Status Code 202 along with an X-Task-ID header and status message of âPendingâ in the body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you do not have permission to update {zoneName}.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651643"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Update an RRSet</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This call allows you to update a set of resource records of a particular type (an RRSet) for a specified domain owner.</p>
+                                            <p class="BodyText">Be sure to specify the TTL and ALL of the record information. Any resource records not included will be removed from the RRSet, and the TTL value specified at the account level for the record type (or global TTL value) will be used.</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">PUT https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{ownerName}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Must include an <span class="CrossReference" style="color: #ffa500;"><a href="#_Ref462834288" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Resource Record Set (RRSet) DTO</a></span>.</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If task happens in the background, Status Code 202 is returned along with an X-Task-ID header and status message of Pending in the body content.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"> <b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to update records.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If type is invalid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {ownerName} does not exist.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref399843565"></a><a name="_Toc36651644"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Partially Update an RRSet</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This call allows you to update some of the information in a set of resource records of a particular type (an RRSet) for a specified domain owner.</p>
+                                            <p class="BodyText">This differs from the Update RRSet call in two ways:</p>
+                                            <ol start="1" class="ol_1">
+                                                <li class="BodyText" value="1">
+                                                    <p class="BodyText">If you do not specify the TTL, the existing TTL will continue to be used.</p>
+                                                </li>
+                                                <li class="BodyText" value="2">
+                                                    <p class="BodyText">Any resource records specified will be added to the RRSet. Existing records are not modified or removed (except for A and CNAME records; see below note.).</p>
+                                                </li>
+                                            </ol>
+                                            <table class="table_1" style="width: 60%;border-left-style: solid;border-left-width: 1pt;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1pt;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1pt;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_6" style="width: 68pt;" />
+                                                <col class="col_8" style="width: 704px;" />
+                                                <tr>
+                                                    <td class="td_5" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="NOTEText">
+                                                            <img src="../Resources/Images/Rest-API_User_Guide/Resource Record Sets_1_62x63.png" class="img_9" style="width: 62;height: 63;" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_6" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="TableBody">There is a special case for A and CNAME resource records. Since only a single resource record is allowed in an A or CNAME RRSet, if you perform a partial update, you will modify the single resource record.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">PATCH https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{ownerName}</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: For standard XML or JSON calls, you must include an <span class="CrossReference"><a href="#_Ref462834288" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="font-size: 12pt;color: #ffa500;">Resource Record Set (RRSet) DTO</a></span>.</p>
+                                            <p class="BodyText">For <a href="Making Updates via JSON PATCH.htm#JSON_PATCH_EXAMPLES" style="color: #ffa500;font-size: 12pt;" class="MCXref xref">JSON PATCH Examples</a>, the body must include a <a href="Making Updates via JSON PATCH.htm#JSON_PATCH_DTO" style="color: #ffa500;font-size: 12pt;" class="MCXref xref">JSON PATCH DTO</a>.</p>
+                                            <p class="BodyText">Patchable Objects for Resource Records:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">biz.example.ultra.rest.dto.RRSet</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">biz.example.ultra.rest.dto.RRSet.List&lt;String&gt;</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText">An Rdata element value can be patched if the index has identified each value delimited by a space in the string. Refer to the below example.</p>
+                                            <p class="p_12">JSON Example: Update only the mail server name in the 1st MX record, or replace all values in 2nd MX record for rdata ["10 mail1.json-patch-rr-set-pr-zone.com.", "20 mail1.json-patch-rr-set-pr-zone.com."]</p>
+                                            <p class="p_12">&#160;</p>
+                                            <p class="Code">[<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"op": "replace",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"path": "/rdata/0/1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;"value": "new.mail.server.biz."<br />&#160;&#160;&#160;&#160;},&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"op" : "replace",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"path": "/rdata/1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"value": "30 new3.mail.server.biz"<br />&#160;&#160;&#160;&#160;}<br />]</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If task happens in the background, Status Code 202 is returned along with an X-Task-ID header and status message of Pending in the body content.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {ownerName} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to update records.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {type} is invalid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If patch operation is not allowed for the given JSON pointer value.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651645"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Delete All RRSets for an Owner and Type</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This call allows you to delete all resource records of a particular type (an RRSet) for a specified domain owner.</p>
+                                            <table class="table_1" style="width: 60%;border-left-style: solid;border-left-width: 1pt;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1pt;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1pt;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_6" style="width: 60pt;" />
+                                                <col class="col_69" style="width: 715px;" />
+                                                <tr>
+                                                    <td class="td_5" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="NOTEText">
+                                                            <img src="../Resources/Images/Rest-API_User_Guide/Introduction_51x57.png" class="img_2" style="width: 51;height: 57;" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_6" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="TableBody">&#160;</p>
+                                                        <p class="TableBody">The Delete All RRSets call does not allow for the use of ANY as the {type} entry.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">DELETE https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{ownerName}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If delete happens immediately, Status Code 204 is returned with no body content.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If delete happens in the background, a Status Code 202 is returned along with an X-Task-ID header and status message of Pending in the body content.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to delete records.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If type is invalid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {ownerName} does not exist.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h2 class="Heading2"><a name="_Toc36651646"></a>TTL Records Consistency in Resource Records Set</h2>
+                                    <p class="BodyText">Per <a href="https://tools.ietf.org/html/rfc2181" class="Hyperlink" style="color: #0000ff;">RFC 2181</a>, the Time to Live (TTL) of all Resource Records in an RRSet must be the same value. For RRSets that (can) have multiple records and the same owner and type, the TTL behavior will act as follows.</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Updating the TTL of Records via PATCH Request</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Whenever a TTL value of an existing record in an RRSet is modified using a Partial Update (PATCH) request, the other records will also be updated to the newly modified TTL value. This will also create an Audit entry for each record that is being modified. </p>
+                                            <p>For example, the following three records are of owner âtxtrecordâ and type âTXTâ, with rdata details and TTL values.</p>
+                                            <ol>
+                                                <li value="1">txtrecorddata1 with TTL 300</li>
+                                                <li value="2">txtrecorddata2 with TTL 500</li>
+                                                <li value="3">txtrecorddata3 with TTL 400</li>
+                                            </ol>
+                                            <p class="BodyText">Now, when you update the record with txtrecorddata1 to TTL value of 600, the other two rdata records will also update their TTL values to the new 600 value.</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Updating the TTL of Records via PATCH BIND File</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">If you are performing an update via a BIND file that contains multiple records for an RRSet (same owner and type) with different TTL values for each record, then each record will be created with the lowest TTL value amongst those RRset records in the BIND file. </p>
+                                            <p class="BodyText">For example, the following three records are of an owner âtxtrecordâ and type âTXTâ, with rdata details and varying TTL values.</p>
+                                            <ol>
+                                                <li value="1">txtrecorddata1 with TTL value 300</li>
+                                                <li value="2">txtrecorddata2 with TTL value 500</li>
+                                                <li value="3">txtrecorddata3 with TTL value 400</li>
+                                            </ol>
+                                            <p class="BodyText">Once the update is completed, each RRSet record will have a TTL value of 300.</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a New Record via Bind Upload</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">When you are creating a new record for an Owner and Type via a Bind upload, if the TTL value is not provided in the request, and there are pre-existing records for this specific Owner and Type, the REST API will create a new record with a TTL value that matches the lowest common TLL value amongst the existing records (of the same Owner and Type). </p>
+                                            <p class="BodyText">If there are no pre-existing records for the Owner and Type, and a TTL value is not provided at the time of the Bind upload, then the TTL value will be set to the default value.</p>
+                                            <p class="BodyText">For example, the following three existing records are of Owner âtxtrecordâ and Type TXT, with rdata details and TTL values.</p>
+                                            <ol>
+                                                <li value="1">txtrecorddata1 with TTL 300</li>
+                                                <li value="2">txtrecorddata2 with TTL 500</li>
+                                                <li value="3">txtrecorddata with TTL 400</li>
+                                            </ol>
+                                            <p class="BodyText">Now, when you create the new record for the same Owner and Type via Bind upload, the new records will have TTL value(s) of 300, and any of the pre-existing records for the same Owner and Type will have the TTL values updated to 300.</p>
+                                            <p class="BodyText">When you are creating a new record for an Owner and Type via a Bind upload, if the TTL value is provided in the request, and there are pre-existing records for this specific Owner and Type, the REST API will create new records with the provided TTL value, and will also update the TTL value of the pre-existing records (of the same Owner and Type) with the new TTL value being provided. </p>
+                                            <p class="BodyText">For example, the following three pre-existing records are of Owner âtxtrecordâ and Type TXT, with rdata details and TTL values:</p>
+                                            <ol>
+                                                <li value="1">txtrecorddata with TTL 300</li>
+                                                <li value="2">txtrecorddata with TTL 500</li>
+                                                <li value="3">txtrecorddata with TTL 400</li>
+                                            </ol>
+                                            <p class="BodyText">Once the upload is complete, the three RRSet records above will be created with a TTL value of 300, and all the of the pre-existing records for the Owner and Type will also be updated to the TTL value of 300.</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Updating the TTL of Records via a POST Request</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">When you are creating a new record for an Owner and Type, if the TTL value is not provided in the request, and there are no pre-existing records for the specific Owner and Type, then the new record will be created with the default TTL value (86400). </p>
+                                            <p class="BodyText">For example, if you add a record of Owner âtxtrecordâ and Type TXT but without a TTL value, the record will be assigned the TTL value of 86400.</p>
+                                            <p class="BodyText">When you are creating a new record for an Owner and Type, if the TTL is provided in the request and there are pre-existing records for the specified Owner and Type, the REST API will create a new record with the provided TTL value, and will also update the TTL value of the pre-existing records to the new TTL value.</p>
+                                            <p class="BodyText">For example, the following three pre-existing records are of Owner âtxtrecordâ and Type TXT, with rdata details and TTL values:</p>
+                                            <ol>
+                                                <li value="1">txtrecorddata1 with TTL 300</li>
+                                                <li value="2">txtrecorddata2 with TTL 500</li>
+                                                <li value="3">txtrecorddata3 with TTL 400</li>
+                                            </ol>
+                                            <p class="BodyText">If you add the new record with the TTL value of 700 via the POST request, all of the above mentioned pre-existing records will update their TTL value to 700 as well.</p>
+                                            <p class="BodyText">When you are creating a new record for an Owner and Type, if the TTL value is not provided in the request, and there are pre-existing records for the specified Owner and Type, the REST API will create a new record with the lowest TTL value amongst the pre-existing records of the specified Owner and Type. </p>
+                                            <p class="BodyText">For example, the following three pre-existing records are of Owner âtxtrecordâ and Type TXT, with rdata details and TTL values:</p>
+                                            <ol>
+                                                <li value="1">txtrecorddata1 with TTL 300</li>
+                                                <li value="2">txtrecorddata2 with TTL 500</li>
+                                                <li value="3">txtrecorddata3 with TTL 400</li>
+                                            </ol>
+                                            <p class="BodyText">If you add a new record without providing the TTL value via a POST request, the new record will be added with the lowest TTL value from the pre-existing records, so in this scenario, the TTL value 300.</p>
+                                        </div>
+                                    </div>
+                                    <p class="BodyText"> </p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Simple Load Balancing (SLB) Pool API</title>
+        <link href="../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1 class="Heading1"><a name="_Toc36651740"></a>Simple Load Balancing (SLB) Pool API</h1>
+                                    <p class="BodyText">Simple Load Balancing Pools are used to define a pool of up to five (5) IPv4 A records (Primary Records pool), an HTTP(S) monitor, and a backup (All Fail) IPv4 address. One resource record will be served based on the&#160;Response Method&#160;configured.</p>
+                                    <p class="BodyText">Simple Load Balancing supports the usage of IPv6 addresses, using the AAAA record type. You will need to alter the API calls to match the AAAA record type when trying to use an IPv6 address instead of an IPv4 address.</p>
+                                    <p class="BodyText">An additional limitation is that you are not able to mix and match IPv4 and IPv6 addresses in the rdata field of the body of a call. You must keep these record types consistent throughout the call.</p>
+                                    <p class="BodyText">The following is the list of available IPv6 formats that are accepted:</p>
+                                    <table class="table_1" style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_132" style="width: 221px;" />
+                                        <col class="col_133" />
+                                        <thead>
+                                            <tr class="tr_14">
+                                                <th class="th_13" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">IPv6 Address Format</p>
+                                                </th>
+                                                <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Example</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_14">
+                                                <td class="td_25" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_5">
+                                                        <p class="TableBody_3">IPv6 Full Notation</p>
+                                                    </p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_6">â2001:0db8:0a0b:12f0:0000:0000:0000:0001â</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_14">
+                                                <td class="td_25" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_5">
+                                                        <p class="TableBody_3">Compressed</p>
+                                                    </p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader">â2001:db8:a0b:12f0::1â</p>
+                                                    <p class="TableHeader">"2610:a1:1059:0:0:0:0:35"</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText">&#160;</p>
+                                    <p class="BodyText">When using Simple Load Balancing, the defined monitor (probe) sends HTTP(S) GET or POST requests from four locations towards the target addresses once every five minutes. Optionally, the request to the target system can include HTTP(S) request data and/or the HTTP response data can be searched for specific content. If no search string is specified, the probe of the target is considered as successful if any non-error HTTP response from the target is received. The availability of the target system is evaluated upon receipt of each successful or unsuccessful probe result from each location.</p>
+                                    <p class="BodyText">If the monitor (probe) detects that a record in the&#160;Primary Records&#160;pool is unreachable, that record will not be served unless the record's&#160;Forced State&#160;is set to&#160;Forced Active. If the record's&#160;Forced State&#160;is set to&#160;Forced Inactive, a record will not be served regardless of the pool probe status.</p>
+                                    <p class="BodyText">Serving Preference determines if records will be selected from the Primary Records pool or from the All Fail Record.</p>
+                                    <ol start="1" class="ol_1">
+                                        <li class="BodyText" value="1">
+                                            <p class="BodyText"><b>Auto Select</b> (default): Serving method switches from serving Primary Records, to All Fail Record based upon probe results, and the Forced State of the Primary Records.</p>
+                                        </li>
+                                        <li class="BodyText" value="2">
+                                            <p class="BodyText"><b>Serve Primary</b>: Only the Primary Records are served based upon the probe results and the Forced State of the Primary Records.</p>
+                                        </li>
+                                        <li class="BodyText" value="3">
+                                            <p class="BodyText"><b>Serve All Fail</b>: Only the All Fail Record will be served, ignoring the probe results and the Forced State of the Primary Records.</p>
+                                        </li>
+                                    </ol>
+                                    <p class="BodyText_22">&#160;</p>
+                                    <p class="BodyText_22"><b style="text-decoration: underline;">Note:</b>
+                                    </p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p class="Bulletedtext">Auto Select and Serve Primary will also take into account the Response Method that has been established (if applicable) when determining which records get served.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">It may take up to 15 seconds to see the updated value after a switching between Auto Select/Serve Primary and Serve All Fail.</p>
+                                        </li>
+                                    </ul>
+                                    <h2 class="Heading2"><a name="_Toc36651741"></a>Calling the APIs&#160;&#160;&#160;&#160;</h2>
+                                    <p class="BodyText">In this document you will find descriptions of the Data Transfer Objects (DTOs) and the various available services. In all cases, you will receive a 2xx HTTP response code in response to a successful service call. If an error condition occurs, you will receive an HTTP response code in the 4xx or 5xx range, with a HTTP body that indicates the error condition such as:&#160;&#160;</p>
+                                    <p class="Code">&lt;errors&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;code&gt;AccountNotFound&lt;code&gt;<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;message&gt;Account not found with ID: abc123xyz&lt;/message&gt;<br />&lt;/errors&gt;</p>
+                                    <p class="BodyText">The UltraDNS APIs can accept requests and send responses in both XML and JSON formats. The client can control the format of the request and the response, by supplying the "Content-Type" and "Accept" HTTP headers respectively, as well as supplying either an <b>"application/xml"</b> or <b>"application/json"</b> for the value in either header. The default response format is JSON. </p>
+                                    <h2 class="Heading2"><a name="_Toc36651742"></a>Modifications of Existing DTOs and Parameters</h2>
+                                    <p class="BodyText">Pools are implemented as additional information added to RRSets. A SLBPool DTO has a section called âprofile.â The profile contains information that is outside the typical boundaries of various DNS specifications. </p>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref464118997"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Profile Information for Simple Load Balancing Pools</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">A profile is simply a JSON Map. All profiles must contain a key called @context. This is a JSON-LD reference to a schema (<a href="http://json-ld.org/"><span class="API-URL-CHAR">http://json-ld.org/). <span style="color: #000000;">The schema describes the custom data that is used in the profile fields.</span></span></a></p>
+                                            <p class="BodyText">The schema name for SLB Pools is set to <a href="http://schemas.ultradns.com/SLBPool.jsonschema"><span class="API-URL-CHAR">http://schemas.ultradns.com/SLBPool.jsonschema<span class="API-URL-CHAR">.</span></span></a></p>
+                                            <p class="BodyText">The other fields in the profile for a SLB Pool are:</p>
+                                            <p class="Caption_5">
+                                                <p class="Caption">SLB Pool Profile Information</p>
+                                            </p>
+                                            <table class="table_1" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;width: 70%;">
+                                                <col class="col_45" style="width: 144pt;" />
+                                                <col class="col_128" style="width: 343px;" />
+                                                <col class="col_134" style="width: 241pt;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_16" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_16" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_16" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_38" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;description</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">&#160;An optional description of the Simple Load Balancing field.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">String. Less than 255 characters. Optional.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_38" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;rdataInfo</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">The data used to describe the pool records.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Array of <a href="#_Ref456771606" style="color: #ffa500;" class="MCXref xref">RData Info DTO</a>. Required</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_38" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;responseMethod</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The method used to select which record is returned from the primary record pool.</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Required. One of the following:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="TableBody"><b>PRIORITY_HUNT</b> â The sequence of the records listed in the primary record pool determines the priority. The first record listed is the highest priority record. Once a record starts being served, it will always be served until the probe detects a failure on this record or the record is FORCED_INACTIVE. The top priority record is always returned among all the set of primary records where the following conditions are satisfied:</p>
+                                                                    <ol>
+                                                                        <li value="1">
+                                                                            <p class="TableBody">Record forcedState is set to FORCED_ACTIVE.</p>
+                                                                        </li>
+                                                                        <li value="2">
+                                                                            <p class="TableBody">Pool Probe is determined to be passing successfully for the record (based upon Threshold configuration), and the record forced state is NOT_FORCED and probingEnabled at this record level is set to true.</p>
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="TableBody"><b>RANDOM</b> â A random record is returned from the following set of primary records.</p>
+                                                                    <ol>
+                                                                        <li value="1">
+                                                                            <p class="TableBody">Pool Probe is determined to be passing successfully (based upon Threshold configuration), and the record forced state is NOT_FORCED and probingEnabled at this record level is set to true.</p>
+                                                                        </li>
+                                                                        <li value="2">
+                                                                            <p class="TableBody">Record forcedState is set to FORCED_ACTIVE.</p>
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="TableBody"><b>ROUND_ROBIN</b> - A record is returned in rotation from the following set of records.</p>
+                                                                    <ol>
+                                                                        <li value="1">
+                                                                            <p class="TableBody">Pool Probe is determined to be passing successfully (based upon Threshold configuration), and the record forced state is NOT_FORCED and probingEnabled at this record level is set to true.</p>
+                                                                        </li>
+                                                                        <li value="2">
+                                                                            <p class="TableBody">If record forcedState is set to FORCED_ACTIVE.</p>
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_38" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;allFailRecord</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Information for the backup record.</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">An <span class="CrossReference"><a href="#_Ref456771607" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">All Fail Record DTO</a></span>. Required.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_38" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;monitor</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Information for the probe / monitor.</p>
+                                                        </td>
+                                                        <td class="td_38" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="Bulletedtext">A <span class="CrossReference"><a href="#_Ref456771608" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Monitor DTO</a></span>. Required.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_30" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;regionFailureSensitivity</p>
+                                                        </td>
+                                                        <td class="td_30" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Specifies the sensitivity to the number of regions that must fail probing (Low or High) in order for the backup record to become active.</p>
+                                                        </td>
+                                                        <td class="td_30" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="Bulletedtext_8">Required. One of either:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>LOW</b> â All 4 regions have to fail.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>HIGH</b> â 2 or more regions have to fail.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_30" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;servingPreference</p>
+                                                        </td>
+                                                        <td class="td_30" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Allows users to specify which set of records to serve, from the Simple Load Balancing Pool. Possible choices are:</p>
+                                                            <ul style="list-style-type: square;">
+                                                                <li>AUTO_SELECT</li>
+                                                                <li>SERVE_PRIMARY</li>
+                                                                <li>SERVE_ALL_FAIL</li>
+                                                            </ul>
+                                                            <p class="TableBody_3">&#160;</p>
+                                                        </td>
+                                                        <td class="td_30" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="Bulletedtext_8">Required. One of :</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>AUTO_SELECT</b> â The pool can switch from serving from the primary record set, to an All Fail record OR, from an All Fail record to the primary record set automatically, based upon the probe results and other record forcedState settings.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>SERVE_PRIMARY</b> â Only a record in the primary pool will be served. There is no fail over to the âAll failâ record. </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>SERVE_ALL_FAIL</b> â Only the All Fail Record will be served..</p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_30" style="text-align: left;font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">&#160;status</p>
+                                                        </td>
+                                                        <td class="td_30" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Ignored if sent on Create or Update. Returned when list of RRSets is returned.</p>
+                                                        </td>
+                                                        <td class="td_30" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="Bulletedtext_8">One of either:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>OK</b>- Priority record(s) are being served.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>WARNING</b> â One of the priority records is not being served due to the monitor detecting a failure, but there is still a priority record to be served.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Bulletedtext"><b>CRITICAL</b> â The backup All Fail record is being served due to the monitor detecting a failure.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p>This is a pool level setting that is determined based upon the number of records available to be served. The number of records available to be served is determined by the probe results from various regions.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref456771606"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">RData Info DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="Caption"><a name="RData_Info_DTO"></a>RData Info DTO</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_45" style="width: 211px;" />
+                                                <col class="col_128" style="width: 530px;" />
+                                                <col class="col_134" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_17" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_17" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_17" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_31" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">rdataInfo/description</p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">An optional description of the record in the live pool.</p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="BodyText_12">String. Less than 255 characters. Optional.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_31" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">rdataInfo/forcedState</p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The Forced State of the record that indicates whether the record needs to be: force served, forced to be inactive, or the force status not being set all.</p>
+                                                            <p class="TableBody">Defaults to NOT_FORCED. </p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="Bulletedtext_8">Optional. Valid values are one of the following:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Bulletedtext_11">FORCED_ACTIVE</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Bulletedtext_11">FORCED_INACTIVE</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Bulletedtext_11">NOT_FORCED (default)</p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_31" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">rdataInfo/probingEnabled</p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Can be set at the record level to indicate whether probing is required (true) or not (false) for the given record. </p>
+                                                            <p class="TableBody_3">Defaults to true at the record level.</p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">true or false.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_31" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">rdataInfo/availableToServe</p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Indicates whether the record is available to be served (true) or not (false), based upon the probe results or the forced state of the record. Applies to JSON response, not JSON request.</p>
+                                                        </td>
+                                                        <td class="td_31" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">true or false.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref456771607"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">All Fail Record DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="Caption"><a name="All_Fail_Record_DTO"></a>All Fail Record DTO</p>
+                                            <table style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;" class="table_1">
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="color: #ffffff;font-weight: bold;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>Field</p>
+                                                        </td>
+                                                        <td style="color: #ffffff;font-weight: bold;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>Description</p>
+                                                        </td>
+                                                        <td style="color: #ffffff;font-weight: bold;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>Type</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody_3">allFailRecord/rdata</p>
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody">BIND&#160;data for the backup record.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody">IPv4 or IPv6 address. Required.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody_3">allFailRecord/description</p>
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody">An optional description for the backup record.</p>
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody">String. Less than 255 characters. Optional.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody_3">allFailRecord/serving</p>
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Serving status of the AllFail Record. This is a response only attribute.</p>
+                                                            <p class="TableBody">true = serving<br />false = not serving</p>
+                                                        </td>
+                                                        <td style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <p class="TableBody">true of false</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref456771608"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Monitor DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="Caption"><a name="Monitor_DTO"></a>Monitor DTO</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_45" style="width: 153pt;" />
+                                                <col class="col_128" />
+                                                <col class="col_134" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_13" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_19">Field</p>
+                                                        </th>
+                                                        <th class="th_14" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_19">Description</p>
+                                                        </th>
+                                                        <th class="th_14" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_19">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">monitor/method</p>
+                                                            <p class="p_12">&#160;</p>
+                                                            <p class="p_14">&#160;</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The HTTP method used to connect to the monitored URL.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody" style="font-style: normal;">Required. One of either:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="TableBody" style="font-style: normal;">GET</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="TableBody" style="font-style: normal;">POST</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="TableBody" style="font-style: normal;">PUT</p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">monitor/url</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The monitored URL.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="Bulletedtext_8">
+                                                                <p class="TableBody" style="font-style: normal;">Required. A full URL including protocol, host, and URI. Valid protocols are http and https. </p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">monitor/transmittedData</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">If a monitor is sending a POST, the data that is sent as the body of the request.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="Bulletedtext_8">
+                                                                <p class="TableBody" style="font-style: normal;">String. Less than 255 characters. Optional.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">monitor/searchString</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">If supplied, the string that is checked against the returned data from the request. The monitor fails if the search string is not present.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String. Less than 255 characters. Optional.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651744"></a><a name="Create_Simple_Load_Balancing_Pool"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Create a Simple Load Balancing Pool</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{newPoolName}</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Must include <span class="CrossReference"><a href="#_Ref464118997" class="ParaTextOnly MCXref xref xrefParaTextOnly">Profile Information for Simple Load Balancing Pools</a></span>.</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 201 is returned with a <span class="CrossReference"><a href="Tasks.htm#_Ref396227604" class="ParaTextOnly MCXref xref xrefParaTextOnly">Task DTO</a></span> in the body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {taskId} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you do not have permission to read {taskId}.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText">The {newPoolName} can either be a Fully Qualified Domain Name, or a Relative Domain Name.</p>
+                                            <p class="BodyText">The below JSON example demonstrates creating a new pool along with five (5) records, along with the All Fail record.</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">JSON Example: Create SLB Pool IPv4 Address </p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"ttl":&#160;333,<br />&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"1.1.1.1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"2.2.2.2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"3.3.3.3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"4.4.4.4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"5.5.5.5"<br />&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;"profile": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"@context": "http://schemas.ultradns.com/SLBPool.jsonschema",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "SLB Pool description",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdataInfo": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"FORCED_ACTIVE",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": false<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"FORCED_INACTIVE",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"5",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"responseMethod":&#160;"PRIORITY_HUNT",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"allFailRecord": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdata":&#160;"6.6.6.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"Backup Record"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"monitor": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"method":&#160;"POST",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"https://www.google.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"transmittedData":&#160;"q=something",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"searchString":&#160;"UltraDNS"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"regionFailureSensitivity":&#160;"LOW",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"servingPreference":&#160;"AUTO_SELECT"<br />&#160;&#160;&#160;&#160;}<br />}</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">Simple Load Balancing Pools (SLB) can only be defined for RRSets of type A (1). It is an error to define a SLB Pool for other RRSets. </p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">It is also an error to define a SLB pool with no records, or with more than five (5) records.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651745"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">List Simple Load Balancing Pools</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}/rrsets/?q=kind:SLB_POOLS <br /></p>
+                                            <p class="BodyText"><b>Parameters</b>:</p>
+                                            <p class="BodyText">The âqâ parameter for GET /v1/zones/{zoneName}/rrsets and GET /zones/{zoneName}/rrsets/{type} recognize a new attribute called âkind.â The valid values for kind are:</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_93" />
+                                                <col class="col_135" />
+                                                <tr>
+                                                    <td class="td_36" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText_15">Value</p>
+                                                    </td>
+                                                    <td class="td_37" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText_15">Meaning</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_25" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody_3">ALL</p>
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_26" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody">All pools and records (such as RECORDS, and POOLS).</p>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr_14">
+                                                    <td class="td_25" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody3">
+                                                                <p class="TableBody_3">RECORDS</p>
+                                                            </p>
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_26" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody">Only resource records.</p>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_25" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody_3">POOLS</p>
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_26" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBOdy">All Pools</p>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_25" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody_3">RD_POOLS</p>
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_26" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody">Only RD Pools.</p>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_25" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody_3">DIR_POOLS</p>
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_26" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody">Only Directional Pools.</p>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_25" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody_3">SF_POOLS</p>
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_26" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody">Only Simple Monitor / Failover Pools.</p>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_25" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody_3">SLB_POOLS</p>
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_26" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="BodyText">
+                                                            <p class="TableBody">Only Simple Load Balancing Pools.</p>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">These values can be comma-separated.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If kind is not specified, it will default to the value ALL.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">This list is subject to change as new pool types are defined.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with an <span class="CrossReference"><a href="#_Ref456771606" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">RData Info DTO</a></span> in the body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If you do not have access to the zoneName.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If the zoneName is invalid.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651746"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">How Simple Load Balancing Pools are Displayed</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">When an owner that represents a SLB Pool is returned, the profile information must be included.</p>
+                                            <p class="BodyText">If SLB Pools are included in a list with other RRSet types, the SLB Pools are placed at the end of the list. If the list is paginated, the SLB Pools are returned after the pages with all other record types listed.</p>
+                                            <p class="BodyText">The hierarchy for the display order is as follows:</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p class="BodyText">Standard RRSets, RD Pools, and DIR Pools intermixed.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p class="BodyText">All SF Pools</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p class="BodyText">All SLB Pools.</p>
+                                                </li>
+                                            </ol>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">JSON Example: Displaying SLB Pools IPv4</p>
+                                            <p class="Code_13">
+                                                <p class="Code">STATUS&#160;200&#160;OK<br />{<br />&#160;&#160;&#160;&#160;"zoneName":&#160;"primary-example.com.",<br />&#160;&#160;&#160;&#160;"rrSets": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ownerName":&#160;"primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rrtype":&#160;"A (1)",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ttl":&#160;333,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"1.1.1.1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"2.2.2.2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"3.3.3.3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"4.4.4.4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"5.5.5.5"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"profile": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"@context":&#160;"http://schemas.ultradns.com/SLBPool.jsonschema",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"SLB Pool description",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdataInfo": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "description":&#160;"1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"availableToServe": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"FORCED_ACTIVE",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"availableToServe": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"FORCED_INACTIVE",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"availableToServe": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"availableToServe": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"5",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"availableToServe": true <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"responseMethod":&#160;"PRIORITY_HUNT",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"allFailRecord": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"Backup Record"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "serving": false<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "rdata":&#160;"6.6.6.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"monitor": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"method":&#160;"POST",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"https://www.google.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"transmittedData":&#160;"q=something",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"searchString":&#160;"UltraDNS"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"regionFailureSensitivity":&#160;"LOW",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status":"OK"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "servingPreference":&#160;"AUTO_SELECT",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]<br />}</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651747"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Update Simple Load Balancing Pools</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">For full updates (PUT), the SLB Pool profile must be fully specified. Modify both the Pool Configuration and Records / Backup Record.</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">PUT https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{existingPoolName}</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>The {existingPoolName} can either be a Fully Qualified Domain Name, or a Relative Domain Name.</li>
+                                            </ul>
+                                            <br />
+                                            <table class="table_1" style="border-left-style: solid;border-left-width: 1pt;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1pt;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1pt;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;width: 70%;">
+                                                <col class="col_6" style="width: 80pt;" />
+                                                <col class="col_8" style="width: 892px;" />
+                                                <tr class="tr_26">
+                                                    <td class="td_39" style="vertical-align: middle;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="NOTEText_4">
+                                                            <img src="../Resources/Images/Rest-API_User_Guide/Introduction.png" class="img_2" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="td_35" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                        <p class="TableBody">When performing a PUT request on a Simple Load Balancing pool, if the Transmitted Data is being completed as a GET call, you will need to remove the information inside the â â of the Transmitted Data section. Otherwise, you will encounter an error.</p>&#160;<p class="Code">"monitor": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"method":&#160;"PUT",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"http://www.google.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"transmittedData":&#160;" ",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"searchString":&#160;"UltraDNS"<br />}</p></td>
+                                                </tr>
+                                            </table>
+                                            <p class="Examples">JSON Example: Full Update IPv4 </p>
+                                            <p class="Code_11">
+                                                <p class="Code">{<br />&#160;&#160;&#160;&#160;"ttl":&#160;333,<br />&#160;&#160;&#160;&#160;"rdata": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"1.1.1.1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"2.2.2.2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"3.3.3.3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"5.5.5.5"<br />&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;"profile": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"@context":&#160;"http://schemas.ultradns.com/SLBPool.jsonschema",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"SLB Pool description",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdataInfo": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"1"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"2"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"FORCED_ACTIVE"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": false<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"3"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"FORCED_INACTIVE"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"5"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"responseMethod":&#160;"RANDOM",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"allFailRecord": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"rdata":&#160;"7.7.7.7",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"Backup Record"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"monitor": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"method":&#160;"POST",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"http://www.google.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"transmittedData":&#160;"q=something",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"searchString":&#160;"UltraDNS"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"regionFailureSensitivity":&#160;"HIGH"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"servingPreference":&#160;"SERVE_PRIMARY"<br />&#160;&#160;&#160;&#160;}<br />}</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Adding a Record into a Simple Load Balancing Pool</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Adding-Record (AR) operation is a special case of the general SLB Partial Update Pool steps outlined in this guide, and it follows the same URL and content format as shown below.</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">PATCH https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{existingPoolName}</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">The {existingPoolName} can either be a Fully Qualified Domain Name, or a Relative Domain Name.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText">There are two ways to perform this action: Either use a body of <span class="CrossReference"><a href="Resource Record Sets.htm#_Ref462834288" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Resource Record Set (RRSet) DTO</a></span> or use a body of the <span class="CrossReference"><a href="Making Updates via JSON PATCH.htm#_Ref399929538" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">JSON PATCH DTO</a></span></p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If using the RRSet DTO method, the body contains the fields that need to be partially updated, which are structurally similar to what is used in <a href="#Create" class="Hyperlink">Creating a Pool</a>.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="Examples">JSON Example: Update Pool via JSON Patch</p>
+                                            <p class="Code_11">
+                                                <p class="Code">{<br />&#160;&#160;"rdata": ["1.1.1.2"],<br />&#160;&#160;"profile": {<br />&#160;&#160;"rdataInfo": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"desc",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState":&#160;"NOT_FORCED"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;]<br />&#160;}</p>
+                                            </p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If using the JSON Patch DTO, the following two methods need to be done in the same PATCH location.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="Examples">JSON Example: Partial Update Record via JSON Patch</p>
+                                            <p class="BodyText">(<b>Content Type: application/json-patch+json</b>)</p>
+                                            <p class="Code">[<br />&#160;&#160;&#160;&#160;{"op":&#160;"add",&#160;"path":&#160;"/rdata/-",&#160;"value":&#160;"1.1.1.2"},<br />&#160;&#160;&#160;&#160;{"op":&#160;"add",&#160;"path":&#160;"/profile/rdataInfo/-",&#160;"value": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description":&#160;"desc",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probingEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"forcedState": "Not_Forced"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />]</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">Both of the above examples achieve the same result on an existing SLB pool.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Remove a Record in an Simple Load Balancer Pool</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="Examples">JSON Example: Remove a Record in an SLB Pool</p>
+                                            <p class="Code">[<br /> &#160;&#160;&#160;{"op": "remove", "path": "/rdata/0"},<br />&#160;&#160;&#160;&#160;{"op": "remove", "path": "/profile/rdataInfo/0"}<br />]</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Updating One or More Configurations in an SLB Pool</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="Examples">JSON Example: Update Pool Level Configurations</p>
+                                            <p class="Code">[<br />&#160;&#160;&#160;&#160;{"op": "replace", "path": "/profile/description", "value": "Pool Level Desc B"}<br />&#160;&#160;&#160;&#160;{"op": "replace", "path": "/profile/allFailRecord/rdata", "value": "1.1.1.1"},<br />&#160;&#160;&#160;&#160;{"op": "replace", "path": "/profile/responseMethod", "value": "ROUND_ROBIN"},<br />&#160;&#160;&#160;&#160;{"op": "replace", "path": "/profile/monitor/url", "value": "http://www.twitter.com"}<br />&#160;&#160;&#160;&#160;{"op": "replace", "path": "/profile/regionFailureSensitivity", "value": "LOW"}<br />&#160;&#160;&#160;&#160;{"op": "replace", "path": "/profile/servingPreference", "value": "SERVE_ALL_FAIL"}<br />]</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651748"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Delete a Simple Load Balancing Pool</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">DELETE https://api.ultradns.com/zones/{zoneName}/rrsets/{type}/{existingPoolName}</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If delete happens immediately, Status Code of 204 is returned with no body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {taskId} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not a valid ZoneName.</p>
+                                                    <p class="Bulletedtext">&#160;</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li>
+                                                            <p class="Bulletedtext">The {existingPoolName} can either be a Fully Qualified Domain Name, or a Relative Domain Name.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Bulletedtext">The delete endpoints are not affected by the addition of SLB pools, and will remain the same as the other types of pools.</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="Bulletedtext">&#160;</p>
+                                    <p class="Bulletedtext">&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

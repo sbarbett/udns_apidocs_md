@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5___Side_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Migration Guide for Zone Metadata API&#160;Calls</title>
+        <link href="../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h2 class="Heading2">Migration Guide for Zone Metadata API&#160;Calls</h2>
+                                    <p>The following content outlines the Migration Steps for List Metadata for Zones â Cursor Based Pagination for customers that are still trying to use the deprecated version of these API calls, to the <a href="Zone API/Zone API.htm#List" style="color: #ffa500;" class="MCXref xref">List Metadata for Zones v3 - Cursor Based</a> call. Please note, that this only applies to the API call utilizing /v1 or /v2 AND offset in the method.</p>
+                                    <ol>
+                                        <li value="1">
+                                            <p>	Remove the version in your URL as shown below.</p>
+                                            <ol style="list-style-type: lower-alpha;">
+                                                <li value="1">
+                                                    <p class="Code"><b>Your existing URL format</b>:<br /><br />https://api.ultradns.com/v1/zones<br />https://api.ultradns.com/v2/zones</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p class="Code"><b>Your new URL format</b>:<br /><br />https://api.ultradns.com/v3/zones</p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li value="2">
+                                            <p>The following content emphasizes the changes in how you will retrieve the first page of results.</p>
+                                            <ol style="list-style-type: lower-alpha;">
+                                                <li value="1">
+                                                    <p>There are no changes required in retrieving the first page of result details. Performing the above URL change will be sufficient.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>There is a difference in the pagination behavior when using the new /v3 call. The new version does not return the previously used <span style="font-family: 'Times New Roman'; color: #000000;">resultInfo</span> section, instead, it returns a new section called <span style="font-family: 'Times New Roman'; color: #000000;">cursorInfo</span>. This section provides the cursor-based information used to navigate to the different pages of results that can be returned. The cursorInfo section contains four values â <b>first</b>, <b>next</b>, <b>previous</b>, and <b>last</b>.</p>
+                                                    <ol style="list-style-type: lower-roman;">
+                                                        <li value="1">
+                                                            <p>If there are additional pages of details that can be navigated to, the cursorInfo section will contain the <b>previous</b> and <b>first</b> values.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>If there are no additional pages to navigate to, the cursorInfo section will be empty.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                    <p>The following API example shows a cursorInfo section with <b>next</b> and <b>last</b> values available.</p>
+                                    <p><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://api.ultradns.com/zones/</p>
+                                    <p class="Examples">JSON Example: List Metadata for Zones v3</p>
+                                    <p class="Code">{</p>
+                                    <p class="Code">&#160;&#160;&#160;"queryInfo": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"q": "",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"sort": "name",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"limit": 2</p>
+                                    <p class="Code">&#160;&#160;&#160;},</p>
+                                    <p class="Code" style="background-color: #ffff00;color: #000000;">&#160;&#160;&#160;"cursorInfo": {</p>
+                                    <p class="Code" style="background-color: #ffff00;color: #000000;">&#160;&#160;&#160;&#160;&#160;&#160;"next": "em9uZTIuY29tLjpORVhU",</p>
+                                    <p class="Code" style="background-color: #ffff00;color: #000000;">&#160;&#160;&#160;&#160;&#160;&#160;"last": "fjpMQVNU"</p>
+                                    <p class="Code">&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;"zones": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone1.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "SIGNED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "SUSPENDED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-11T15:42Z"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone2.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "ACTIVE",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-12T12:41Z"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;]</p>
+                                    <p class="Code">}</p>
+                                    <p>&#160;</p>
+                                    <ol start="3">
+                                        <li value="3">
+                                            <p>The following emphasizes the changes in how you will retrieve additional pages of results, besides the first.</p>
+                                            <ol style="list-style-type: lower-alpha;">
+                                                <li value="1">
+                                                    <p>The new parameter <b>cursor</b> is required to navigate to other pages in the URI.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>For example, if you are attempting to retrieve the next page of results, select (copy) the value of the <b>next</b> attribute from the cusorInfo section (from the response) and add it to the cursor parameter in the request URL. &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                    <p><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://api.ultradns.com/v3/zones?<span style="background-color: #ffff00; color: #000000;">cursor</span>=em9uZTIuY29tLjpORVhU</p>
+                                    <p class="Examples">JSON Example: List Metadata for Zones - cursorInfo Provided</p>
+                                    <p class="Code">{</p>
+                                    <p class="Code">&#160;&#160;&#160;"queryInfo": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"q": "em9uZTIuY29tLjpORVhU",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"sort": "name",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"limit": 2</p>
+                                    <p class="Code">&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;"cursorInfo": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"previous": "em9uZTMuY29tLjpQUkVWSU9VUw==",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"first": "OkZJUlNU"</p>
+                                    <p class="Code">&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;"zones": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone3.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "SIGNED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "SUSPENDED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-11T15:42Z"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;]</p>
+                                    <p class="Code">}</p>
+                                    <p>Similarly, select the values from the <b>first</b>, <b>last</b>, or <b>previous</b> attribute from the cusorInfo section in the response to navigate to that desired page.</p>
+                                    <p>
+                                        <br />
+                                    </p>
+                                    <h2 class="Heading2"><a name="Steps_to_Migrate_from_GET_Zones_of_an_Account"></a>Steps to Migrate from GET Zones of an Account to List Metadata for Zones â v3</h2>
+                                    <table class="table_2" style="width: 70%;border-left-style: solid;border-left-width: 1pt;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1pt;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1pt;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_6" style="width: 52pt;">
+                                        </col>
+                                        <col class="col_8" style="width: 1298px;">
+                                        </col>
+                                        <tr>
+                                            <td class="td_34" style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="NOTEText">
+                                                    <img src="../Resources/Images/Rest-API_User_Guide/Introduction_62x66.png" class="img_2" style="width: 62;height: 66;">
+                                                    </img>
+                                                </p>
+                                            </td>
+                                            <td class="td_35" style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p><b>The GET Zones of an Account API call has been deprecated as of 2022-09-30</b>. As an alternative to this API call, users should use the <a href="Zone API/Zone API.htm#List" style="color: #ffa500;" class="MCXref xref">List Metadata for Zones v3 - Cursor Based</a> API call.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p>As we continue to make improvements to our RestAPI performance and remove redundancy, we are requesting that users no longer use the <u style="font-weight: bold;">GET Zones of an Account (Deprecated)</u> API call. The updated <a href="Zone API/Zone API.htm#List" style="color: #ffa500;" class="MCXref xref">List Metadata for Zones v3 - Cursor Based</a> API call will provide the same response details as the Get Zones of an Account API call did, as well as providing an updated pagination method.</p>
+                                    <p>Please use the following steps below to migrate your existing Get Zones of an Account API to the <b>List Metadata for Zones â v3</b> call.</p>
+                                    <ol>
+                                        <li value="1">
+                                            <p>Change the URL to the List Metadata for Zone -v3 URL as shown below.</p>
+                                            <ol style="list-style-type: lower-alpha;">
+                                                <li value="1">
+                                                    <p><b>Your existing URL format</b>- </p>
+                                                    <p class="Code">https://api.ultradns.com/accounts/{accountName}/zones</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p><b>Your new URL format</b> - </p>
+                                                    <p class="Code">https://api.ultradns.com/v3/zones?q=account_name:{accountName}</p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li value="2">
+                                            <p>The following content emphasizes the changes in how you will retrieve the first page of results.</p>
+                                            <ol style="list-style-type: lower-alpha;">
+                                                <li value="1">
+                                                    <p>There are no changes required in retrieving the first page of result details. Performing the above URL change will be sufficient.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>There is a difference in the pagination behavior when using the new /v3 call. The new version does not return the previously used <span style="font-family: 'Times New Roman'; color: #000000;">resultInfo</span> section, instead, it returns a new section called <span style="font-family: 'Times New Roman'; color: #000000;">cursorInfo</span>. This section provides the cursor-based information used to navigate to the different pages of results that can be returned. The cursorInfo section contains four values â <b>first</b>, <b>next</b>, <b>previous</b>, and <b>last</b>.</p>
+                                                    <ol style="list-style-type: lower-roman;">
+                                                        <li value="1">
+                                                            <p>If there are additional pages of details that can be navigated to, the cursorInfo section will contain the <b>previous</b> and <b>first</b> values.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>If there are no additional pages to navigate to, the cursorInfo section will be empty. </p>
+                                                            <p>&#160;</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                    <p>The following API example shows a cursorInfo section with <b>next</b> and <b>last</b> values available.</p>
+                                    <p><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://api.ultradns.com/v3/zones?q=account_name:TestAccount</p>
+                                    <p class="Examples">JSON Example: List Metadata for Zones v3 Response</p>
+                                    <p class="Code">{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;"queryInfo": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"q": "account_name:TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sort": "name",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"limit": 2</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;"cursorInfo": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"next": "em9uZTIuY29tLjpORVhU",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"last": "fjpMQVNU"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;"zones": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone1.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "SIGNED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "SUSPENDED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-11T15:42Z"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone2.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "ACTIVE",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-12T12:41Z"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;]</p>
+                                    <p class="Code">}</p>
+                                    <p>&#160;&#160;&#160;&#160;3.	Retrieving other pages of result details.</p>
+                                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a.	You need to add a new parameter called <b>cursor</b> in order to navigate to the other pages, when viewing details from the current page.</p>
+                                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b.	When retrieving the next page, select the value of the next attribute from the <b>cusorInfo</b> section (from the response) and add it to the cursor parameter in request URL.</p>
+                                    <p><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://api.ultradns.com/v3/zones?q=account_name:TestAccount&amp;cursor=em9uZTIuY29tLjpORVhU</p>
+                                    <p class="Examples">JSON Example: List of Zone Metadata v3 - cursor Included</p>
+                                    <p class="Code">{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;"queryInfo": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"q": "account_name:TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sort": "name",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"limit": 2</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;"cursorInfo": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"previous": "em9uZTMuY29tLjpQUkVWSU9VUw==",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"first": "OkZJUlNU"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;"zones": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone3.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "SIGNED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "SUSPENDED",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-11T15:42Z"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;]</p>
+                                    <p class="Code">}</p>
+                                    <p>&#160;&#160;&#160;&#160;&#160;4.	Similarly, select the values of the first, last, or previous attribute from the cusorInfo section (from the response) in order to navigate to the desired page.</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

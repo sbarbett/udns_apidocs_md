@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>SiteBacker and Traffic Controller Pool Notifications</title>
+        <link href="../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1 class="Heading1"><a name="_Toc36651726"></a>SiteBacker and Traffic Controller Pool Notifications</h1>
+                                    <p>Notifications are used to specify who is alerted when an event is triggered for a particular pool record. Since events can only be created for pool records, notifications in turn can only be created for pool records, not for sub pools however.</p>
+                                    <p>Notifications can only be created for Primary Records. You cannot create notifications for All Fail Records. If the request contains an All Fail Record, then an error is returned with the following message - <b>Notifications cannot be configured for All Fail Records.</b></p>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651727"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Get Notifications for a Pool</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}/rrsets/A/{ownerName}/notifications</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with a <span class="CrossReference"><a href="#_Ref396227908" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">NotificationList DTO</a></span> in the body content. </p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext" style="text-align: left;">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext" style="text-align: left;">If you don't have permission to read this zone.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext" style="text-align: left;">If pool does not exist or is not a SiteBacker/Traffic Controller pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext" style="text-align: left;">If you don't have permissions to access the pool.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651728"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Create a Notification for Specified Pool Records</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/{zoneName}/rrsets/A/{ownerName}/notifications/{emailAddress}</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Must include a <span class="CrossReference"><a href="#_Ref396227951" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Notification DTO</a></span>.</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 201 is returned with a Location Header containing the URI of the notification.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If the task happens in the background, Status Code 202 is returned along with an X-Task-ID header and a status message of âPendingâ in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to read this zone.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If pool does not exist or is not a SiteBacker/Traffic Controller pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permissions to access the pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {emailAddress} is already associated with any pool records in this pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p>If the pool contains both A and AAAA record types.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="Examples">JSON Example: Create a Pool Notification</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160; "email": "email@notification.com",<br />&#160;&#160;&#160; "poolRecords": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "poolRecord": "1.2.3.4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "notification": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "probe": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "record": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "scheduled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "poolRecord": "a.domain.name.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "notification": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "probe": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "record": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "scheduled": false<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; ]<br />}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651729"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Get a Notification for a Pool</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}/rrsets/A/{ownerName}/notifications/{emailAddress}</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with a <span class="CrossReference"><a href="#_Ref396227908" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">NotificationList DTO</a></span> in the body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to read this zone.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If pool does not exist or is not a SiteBacker/Traffic Controller pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permissions to access the pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If this {emailAddress} has not been defined for notifications for this pool.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="Update"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651730"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Update a Notification</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">This will update the Notification Information for only the Pool Record specified in the <span class="CrossReference"><a href="#_Ref396227951" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Notification DTO</a></span>. If the notify flag (probe, scheduled, record) is not specified in the Notification DTO, then it is set to false.</p>
+                                            <p class="BodyText">The following sample JSON will turn off Notifications for a Pool Record:</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;&#160;&#160;"email": "test@test1.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;"poolRecords": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecord": "1.2.3.4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notification": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ]<br />}</p>
+                                            <p><b>Method and URI</b>:</p>
+                                            <p>Provide the current email address in the {emailAddress} of the PUT URL, and then add the new email address in the body of the call.</p>
+                                            <p class="Code">PUT https://api.ultradns.com/zones/{zoneName}/rrsets/A/{ownerName}/notifications/{emailAddress}</p>
+                                            <p><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Must include a <span class="CrossReference"><a href="#_Ref396227951" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Notification DTO</a></span>. Because this is a full update, if the notification flag is not specified in the DTO, the notification will be set to false (turned off). See the JSON example above.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p>Include the new email address in the body of the call.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Response</b>: If update completes, Status Code 200 OK is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If update happens in the background, Status Code 202 is returned along with an X-Task-ID header and a status message of âPendingâ in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to read this zone.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If pool does not exist or is not a SiteBacker/Traffic Controller pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permissions to access the pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If {emailAddress} is not associated with any pool records in this pool.</p>
+                                                </li>
+                                                <li>
+                                                    <p>If the pool contains both A and AAAA record types.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651731"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Delete a Notification</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">DELETE https://api.ultradns.com/zones/{zoneName}/rrsets/A/{ownerName}/notifications/{emailAddress}</p>
+                                            <p><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If delete completes immediately, Status Code 204 is returned with no content in the body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If delete happens in the background, Status Code Status Code 202 is returned along with an X-Task-ID header and status message of âPendingâ in the body content.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {zoneName} is not valid.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you don't have permission to read this zone.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If pool does not exist or is not a SiteBacker/Traffic Controller pool.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h2 class="Heading2"><a name="_Toc36651732"></a><u>Pool Notification DTOs</u>
+                                    </h2>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref403635811"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">NotificationInfo DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The NotificationInfo DTO describes the conditions in which a notification is sent.</p>
+                                            <p class="Caption">NotificationInfo DTO </p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_32" />
+                                                <col class="col_126" />
+                                                <col class="col_20" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_10" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_15" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_15" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="tr_23">
+                                                        <td class="td_23" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_1">
+                                                                <p class="TableBody_3"><b>probe</b>
+                                                                </p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_29" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Indicates whether to notify on probe events.</p>
+                                                        </td>
+                                                        <td class="td_29" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Boolean.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr_24">
+                                                        <td class="td_23" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3"><b>record</b>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_29" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Indicates whether to notify on record events.</p>
+                                                        </td>
+                                                        <td class="td_29" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Boolean.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr_25">
+                                                        <td class="td_23" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3"><b>scheduled</b>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_29" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Indicates whether to notify on scheduled events.</p>
+                                                        </td>
+                                                        <td class="td_29" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Boolean.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="Examples">JSON Example: Notification</p>
+                                            <p class="Code">{<br /> &#160;&#160;&#160;&#160;"probe": true,<br /> &#160;&#160;&#160;&#160;"record": true,<br /> &#160;&#160;&#160;&#160;"scheduled": false<br /> }</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref396227951"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Notification DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Notification DTO associates an email address with a list of pool records. Each pool record is in turn associated with a NotificationInfo configuration.</p>
+                                            <p class="Caption">Notification DTO </p>
+                                            <table class="table_1" style="width: 75%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_34" style="width: 293px;" />
+                                                <col class="col_127" style="width: 557px;" />
+                                                <col class="col_128" style="width: 165px;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_13" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_27" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_1">
+                                                                <p class="TableBody_3"><b>email</b>
+                                                                </p>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The email address being notified. This field is returned on GET, but ignored on POST, PUT, and PATCH.</p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">&#160;String. Valid email address.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_27" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3"><b>notifications/poolRecords</b>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">&#160;The list of pool record settings for this email &#160;address.</p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">&#160;Array.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_27" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3"><b>notifications/poolRecords/poolRecord</b>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">&#160;The pool record.</p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">&#160;String. Either an IP address or a valid owner &#160;name.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_27" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3"><b>notifications/poolRecords/notification</b>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The NotificationInfo DTO describing the notifications for this pool record/email address combination.</p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody"><span class="span_21"><a href="#_Ref403635811" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">NotificationInfo DTO</a></span>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="Examples">JSON Example: Notification Info</p>
+                                            <p class="Code">{<br /> &#160;&#160;&#160;&#160;"email": "a@b.com",<br /> &#160;&#160;&#160;&#160;"poolRecords": [<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecord": "1.2.3.4",<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notification": {<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probe": true,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"record": false,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"scheduled": true<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecord": "2.4.5.6",<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notification": {<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probe": true,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"record": true,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"scheduledâ: false<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;]<br />}</p>
+                                        </div>
+                                    </div>
+                                    <p class="BodyText">&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref396227908"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">NotificationList DTO</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The NotificationList indicates the configured notifications.</p>
+                                            <p class="Caption">NotificationList DTO </p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_119" style="width: 213px;" />
+                                                <col class="col_26" />
+                                                <col class="col_20" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_13" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_27" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3"><b>notifications</b>
+                                                            </p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The list of notifications.</p>
+                                                        </td>
+                                                        <td class="td_28" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_2">
+                                                                <p class="TableBody">Array of the Notification DTO.</p>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="Examples">JSON Example: Notification Info List</p>
+                                            <p class="Code">{<br /> &#160;&#160;&#160;&#160;"notifications": [<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"email": "a@b.com",<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecords": [<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecord": "1.2.3.4",<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notification": {<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probe": true,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"record": false,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"scheduled": true<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecord": "2.4.5.6",<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notification": {<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probe": true,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"record": true,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"scheduled": false<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"email": "c@d.com",<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecords": [<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"poolRecord": "1.2.3.4",<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notification": {<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"probe": false,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"record": true,<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"scheduled": false<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]<br /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /> &#160;&#160;&#160;&#160;]<br /> }</p>
+                                        </div>
+                                    </div>
+                                    <p class="BodyText">&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

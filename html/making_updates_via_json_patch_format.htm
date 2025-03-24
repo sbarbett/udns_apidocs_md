@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Making Updates via JSON PATCH Format</title>
+        <link href="../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1 class="Heading1"><a name="_Ref399928383"></a><a name="_Toc36651596"></a>Making Updates via JSON PATCH Format</h1>
+                                    <p>UltraDNS APIs can create, modify, and return responses in both XML and JSON formats using a DTO that contains the data fields for an entity. However, there are limitations to making updates via this approach. Using PUT requires you to specify all attributes even if you are only changing one attribute. Using the current PATCH method allows you to update only the fields you need, but does not allow you to modify a value in an array, or remove an attribute or array entry. </p>
+                                    <p>In order to work around these limitations, the UltraDNS REST API supports the use of the JSON PATCH standardized format (defined in <a href="http://tools.ietf.org/html/rfc6902" class="Hyperlink">RFC 6902</a>) for specifying entity updates.</p>
+                                    <p>JSON PATCH calls allow you to specify multiple types of updates to a single entity in the system. For example, you can use a single call to update a NotifyAddress for a zone, add a new address to the list, and remove one you no longer need.</p>
+                                    <p>Currently, the UltraDNS REST API allows for JSON PATCH formatted calls to:</p>
+                                    <ul style="list-style-type: square;">
+                                        <li><span class="CrossReference"><a href="Zone API/Zone API.htm#_Ref395092542" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="font-weight: normal;color: #ffa500;">Partially Update a Zone</a></span>-  that includes Primary, Secondary and Alias zones.</li>
+                                        <li><span class="CrossReference"><a href="Web Forwards.htm#_Ref399843533" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="font-weight: normal;color: #ffa500;">Partially Update Web Forwards</a></span>
+                                        </li>
+                                        <li><span class="CrossReference"><a href="Resource Record Sets.htm#_Ref399843565" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="font-weight: normal;color: #ffa500;">Partially Update an RRSet</a></span> â for standard RRSets, Resource Distribution (RD) pools, SiteBacker/Traffic Controller pools, and Directional pools.</li>
+                                        <li><span class="BodyTextChar_1"><a href="SiteBacker and Traffic Controller Pool Probes.htm#_Ref409181324" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Partially Update a Probe</a></span>â for all pool probe types.</li>
+                                        <li><span class="CrossReference"><a href="Directional Pools API.htm#_Ref503427934" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="font-weight: normal;color: #ffa500;">Directional Pools API</a></span> - various calls for Directional Pools will allow for the usage of the JSON PATCH (each call will identify if you can use JSON PATCH).</li>
+                                    </ul>
+                                    <p>The above links will take you to the section of this guide that contains partial update call information for each of the objects listed. </p>
+                                    <p>JSON PATCH requests are sent to the same endpoint as PUT or PATCH updates. However, to indicate that you are sending the request in JSON PATCH format, you must:</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>Use the PATCH HTTP method.</li>
+                                        <li>Supply application/json-patch+json for the value in the "Content-Type" HTTP header.</li>
+                                        <li>Include a JSON array in the body of the request that contains one or more JSON PATCH DTOs (defined below).</li>
+                                    </ul>
+                                    <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+                                        <col style="width: 88px;" />
+                                        <col />
+                                        <tbody>
+                                            <tr>
+                                                <td style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p>
+                                                        <br />
+                                                        <img src="../Resources/Images/Rest-API_User_Guide/Introduction_64x75.png" class="img_2" style="mc-float: center;width: 64;height: 75;" />
+                                                    </p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="NOTEText_1"><b>A Note About JSON PATCH:</b>
+                                                    </p>
+                                                    <p class="TableBody">There is difference between PATCH and JSON PATCH. This difference is communicated to REST API by providing header Content-Type: application/json-patch+json for JSON PATCH versus Content-Type: application/json for regular formats like PATCH, PUT, POST, DELETE, and GET. <br /><br />As a consequence, the whole batch should contain only JSON PATCH bodies, or only regular bodies.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h2 class="Heading2"><a name="_Ref399929538"></a><a name="_Toc36651597"></a><a name="JSON_PATCH_DTO"></a>JSON PATCH DTO</h2>
+                                    <p>When using the JSON PATCH format you must provide a JSON PATCH DTO. The JSON PATCH DTO identifies the type of update you want to make, which attribute you want to modify, and the new value for that attribute. As with all JSON PATCH targets, the first item is numbered 0, the second is numbered 1 and so on. The JSON PATCH is constructed as shown in the below table.</p>
+                                    <p class="Caption"><a name="_Ref399929629"></a><a name="_Ref399931231"></a>JSON PATCH DTO</p>
+                                    <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;" class="table_1">
+                                        <col style="width: 113px;" />
+                                        <col style="width: 548px;" />
+                                        <col style="width: 85px;" />
+                                        <tbody>
+                                            <tr>
+                                                <td style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Field</p>
+                                                </td>
+                                                <td style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Description</p>
+                                                </td>
+                                                <td style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Type</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p style="font-weight: bold;">op</p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Patch operation type you want to perform.</p>
+                                                    <p class="TableBody">Valid values are:</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li class="06Bulletedtext">add</li>
+                                                        <li class="06Bulletedtext">replace</li>
+                                                        <li class="06Bulletedtext">remove</li>
+                                                        <li class="06Bulletedtext">move</li>
+                                                    </ul>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>String</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p style="font-weight: bold;">path</p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>A JSON pointer that identifies the target (JSON target) on which you want to perform the provided operation. The path should be <a href="http://tools.ietf.org/html/rfc6901" title="Link to IETF.org site page listing RFC6901 standards"><span style="color: #00bfff;">RFC-6901 compliant</span>.</a></p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>String</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p style="font-weight: bold;">value</p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>The value you want to apply to the JSON target provided. The value is ignored when the op is set to "remove."</p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Object</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p style="font-weight: bold;">from</p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>The existing value or path that needs to be changed or moved. This field is used when the âmoveâ operation type is used.</p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>String</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h2 class="Heading2"><a name="JSON_PATCH_EXAMPLES"></a><a name="_Toc36651598"></a>JSON PATCH Examples</h2>
+                                    <p>The following example shows an array of JSONPATCH DTOs for updating a Primary zone. Notice that the zone is being updated using multiple operations for the different values for the zone.</p>
+                                    <p class="Examples">JSON PATCH Example: Update Primary Zone information</p>
+                                    <p class="Code"><span style="font-family: 'Courier New';"><span style="color: #000000;">[</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160; {</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "op": "replace",</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "path": "/restrictIpList/0/endIP",</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "value": "7.7.7.7"</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;"> &#160;},</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160; {</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "op": "add",</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "path": "/restrictIpList/1",</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "value": {"startIP": "1.1.1.1", "endIP": "2.2.2.2"}</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160; },</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160; {</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "op": "remove",</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "path": "/restrictIpList/3"</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;"> &#160;}</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">]</span></span>
+                                    </p>
+                                    <p class="BodyText">In the above example, the JSON PATCH performs the following changes to the Primary zone (identified in the PATCH call URI):</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>The endIP address for the first-listed restrictIP is replaced by 7.7.7.7</li>
+                                        <li>The restrictIP list has a new entry, an IP range 1.1.1.1 to 2.2.2.2. This new IP range will be shown second in a list of restrictIPs for this zone.</li>
+                                        <li>The fourth-listed restrictIP entry is removed from the zone.</li>
+                                    </ul>
+                                    <table style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;border-collapse: collapse;margin-left: 0;margin-right: auto;">
+                                        <col style="width: 74px;" />
+                                        <col style="width: 924px;" />
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: middle;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="../Resources/Images/Rest-API_User_Guide/Making Updates via JSON PATCH_60x69.png" class="img_6" style="width: 60;height: 69;" /></p>
+                                                </td>
+                                                <td style="border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NOTEText">When updating Primary Zone Information by performing a POST (create) or a PUT/PATCH (update/partial update) call, the ârestrictIPListâ call is case sensitive (specificially the âIPâ aspect). For these instances, the âIPâ needs to be uppercase.</p>
+                                                    <p class="NOTEText">&#160;</p>
+                                                    <p class="NOTEText">When performing a GET call, or when using JSON-PATCH to PATCH a zone, the âIpâ section of restrictIpList needs to remain as lower case (âIpâ).</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText">&#160;</p>
+                                    <p class="BodyText">This next example displays the JSON PATCH operation for âmove.â This operation allows a recordâs position to be moved from one position to another within a pool. Currently, this operation is only valid for Resource Distribution (RD) pools, Simple Load Balancing (SLB) pools, and SiteBacker / Traffic Controller (SB/TC) pools, as these are the pools that contain multiple rdata values. <br /></p>
+                                    <p class="BodyText">In regards to the SiteBacker and Traffic Controller pools with priority settings, once a record is moved to another position in the pool, the priority setting will be updated accordingly for the change.</p>
+                                    <p class="Examples">JSON PATCH Example: Move operation</p>
+                                    <p class="Code"><span style="font-family: 'Courier New';"><span style="color: #000000;">[</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;"> &#160;&#160;&#160;&#160;{</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "op": "move",</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "path": "/rdata/2",</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">&#160;&#160;&#160; "from": "/rdata/1"</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;"> &#160;&#160;&#160;&#160;}</span></span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="font-family: 'Courier New';"><span style="color: #000000;">]</span></span>
+                                    </p>
+                                    <p class="BodyText">In the above example, the rdata is moving from position 1 to position 2 within the pool.</p>
+                                    <p class="BodyText">The example below shows a JSON PATCH DTO for updating a Secondary Zone.</p>
+                                    <p class="Examples">JSON PATCH Example: Update Secondary Zone information</p>
+                                    <p class="Code"><span style="color: #000000;">[</span>
+                                        <br style="color: #000000;font-family: 'Courier New';" /><span style="color: #000000;">&#160;&#160;&#160; {</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160;&#160; "op": "add",</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160;&#160; "path": "/primaryNameServers/nameServerIpList/nameServerIp1/ip",</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160;&#160; "value": "2.2.20.8"</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160; }</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">]</span>
+                                    </p>
+                                    <p class="BodyText">In this example, the IP address for the first Primary Name Server for the secondary zone has been set to 2.2.20.8. In the <span class="CrossReference"><a href="Zone API/Zone API.htm#_Ref395097899" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #00bfff;">Zone API</a></span> for this zone, this is the value that will now appear for the <i>nameServerIp1</i> attribute.</p>
+                                    <p class="BodyText">JSON PATCH format for partial updates is also supported for RRSets. However, resource record types that have multiple values within an rdata entry (such as MX, NS, or SOA) present a challenge to the standard JSON Pointer format. The standard provides no way to refer to a particular value within a single rdata entry. </p>
+                                    <p class="BodyText">To accommodate this limitation, the UltraDNS REST API provides a special case for rdata entries, allowing both the record <b>and</b> the value for that record to be optionally indexed like a list. The first target number in the path identifies the particular record in the set you want to update; the second target number in the path identifies the value for the record you want to update. If you do not list this second target number, it is assumed that you are updating all values in the specified target record. </p>
+                                    <p class="BodyText">The following example shows a JSON PATCH call to update multiple MX records in a set, demonstrating the ability to index into an rdata record. </p>
+                                    <p class="Examples">JSON PATCH Example: Update MX records in a set</p>
+                                    <p class="Code"><span style="color: #000000;">[</span>
+                                        <br style="font-family: 'Courier New';color: #000000;" /><span style="color: #000000;">&#160; {</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160; "op": "replace",</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160; "path": "/rdata/0/1",</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160; "value": "new.mail.server.biz."</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160; },</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160; {</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160; "op": "replace",</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160; "path": "/rdata/1",</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;&#160; "value": "30 new3.mail.server.biz."</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">&#160;&#160;}</span>
+                                        <br style="color: #000000;" /><span style="color: #000000;">]</span>
+                                    </p>
+                                    <p class="BodyText">In the above example, the first portion of the call updates only the mail server name for the first MX record in the set. The second portion of the call replaces all values (both the priority and the mail server) in the second MX record.</p>
+                                    <p class="BodyText">Performing a GET call for a resource provides the JSON structure on which the JSON-PATCH operates. The fields in the returned resource are the fields that will be specified in the path of the JSON-PATCH. </p>
+                                    <p class="BodyText">The GET calls for JSON PATCH supported items can be found in the following sections: </p>
+                                    <ul style="list-style-type: square;">
+                                        <li><span class="CrossReference"><a href="Zone API/Zone API.htm#_Ref395100959" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Get Zone Metadata</a></span>
+                                        </li>
+                                        <li><span class="CrossReference"><a href="Resource Record Sets.htm#_Ref399844854" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">List all RRSets of a Type for an Owner</a></span> (both Owner and Type are required for the partial update RRSet call). </li>
+                                        <li><span class="BodyTextChar_1"><a href="SiteBacker and Traffic Controller Pool Probes.htm#_Ref409181639" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Get a Probe</a></span>
+                                        </li>
+                                        <li><span class="CrossReference"><a href="Web Forwards.htm#_Ref474401801" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Get Web Forwards</a></span>
+                                        </li>
+                                    </ul>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

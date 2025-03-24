@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5___Side_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Raw Query Sample Report</title>
+        <link href="../../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h2 class="Heading2">Raw Query Sample Report</h2>
+                                    <p class="BodyText">The Advanced Raw Queries report includes copious data for both queries and responses. This report can provide details for query and response troubleshooting. For more details about reports, review the <b>Report Center User Guide</b>.</p>
+                                    <h3 class="Heading3">Requesting Raw Query Sample Report</h3>
+                                    <p class="BodyText"><b>Method and URI</b>:&#160;&#160;&#160;&#160;</p>
+                                    <p class="Code">POST https://api.ultradns.com/reports/dns_resolution/sample/raw_queryHTTP/1.1</p>
+                                    <p class="BodyText_2">OR</p>
+                                    <p class="Code">POST https://api.ultradns.com/reports/dns_resolution/sample/raw_query?offset={offset}&amp;limit={limit}</p>
+                                    <p class="BodyText">
+                                        <br /><b>Parameters</b>: May contain the following:</p>
+                                    <h3 class="Heading3">Raw Query Sample Parameters</h3>
+                                    <p class="Caption"><a name="Raw_Query_Report_Parameters_DTO"></a>Raw Query Parameters DTO</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_67">
+                                        </col>
+                                        <col class="col_166">
+                                        </col>
+                                        <col class="col_168">
+                                        </col>
+                                        <thead>
+                                            <tr>
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Parameter</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;background-color: #7f7f7f;">
+                                                    <p class="BodyText_15">Description</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;background-color: #7f7f7f;">
+                                                    <p class="BodyText_15" style="background-color: #7f7f7f;">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;vertical-align: top;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_8">offset</p>
+                                                </td>
+                                                <td class="td_22" style="vertical-align: top;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">This field is optional. </p>
+                                                    <p class="TableBody">If not specified, initial records will always be returned specified to&#160;limit.&#160;This parameter allows pagination on the reporting records retrieved. The offset will be the integer value that specifies the position of first result to be retrieved. Specify offset as 0 for first results to be retrieved.</p>
+                                                </td>
+                                                <td class="td_22" style="vertical-align: top;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer. Optional.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_46">
+                                                <td class="td_21" style="font-weight: bold;vertical-align: top;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">limit</p>
+                                                </td>
+                                                <td class="td_22" style="vertical-align: top;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">This field is optional. </p>
+                                                    <p class="TableBody">If not specified, the total number of records returned in the response will be equal to the default value 1000.&#160;This parameter allows pagination on the reporting records retrieved. The maximum number of results to be retrieved in a single response is 10,000 records.</p>
+                                                </td>
+                                                <td class="td_22" style="vertical-align: top;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer. Optional.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText">&#160;</p>
+                                    <p class="BodyText"><b>Body</b>: Must contain a <span class="CrossReference"><a href="#Raw_Query_Report_Sort_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" xrefformat="{paratext}">Raw Query Sort DTO</a></span>.</p>
+                                    <h3 class="Heading3">Raw Query Report DTO</h3>
+                                    <p class="Caption"><a name="Raw_Query_Report_Sort_DTO"></a>Raw Query Sort DTO</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_175">
+                                        </col>
+                                        <col class="col_126">
+                                        </col>
+                                        <col class="col_168">
+                                        </col>
+                                        <thead>
+                                            <tr>
+                                                <th class="th_10" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Field</p>
+                                                </th>
+                                                <th class="th_15" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Description</p>
+                                                </th>
+                                                <th class="th_15" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_37">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_8">accountName</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">The name of the account.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">String. Required.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_37">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_8">zoneName</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">The results of the one zone being returned.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li>
+                                                            <p class="Tablebullet">When not specified, all zones under the account will be queried for reporting.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">Wildcards in the zone name are currently not supported.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">Zone names with and without a DOT(.) at the end are supported.</p>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">String. Optional</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_37">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_8">packetStartDateTime</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">The packetStartDateTime must be supplied in the ISO 8601 UTC format (yyyy-MM-ddâTâHH:mm:ss.SSSZ).</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li>
+                                                            <p class="Tablebullet">If not supplied, will default to 00:00:00 of yesterdayâs date.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">The maximum number of days between the packetStartDateTime and packetEndDateTime cannot exceed 90 days. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">The packetStartDateTime must be before or the same as the packetEndDateTime.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">The packetStartDateTime cannot be more than 90 days prior to the current date.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">The packetStartDateTime cannot be a future date.</p>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">Date-Time. Optional</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_37">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_8">packetEndDateTime</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">The packetEndDateTime must be supplied in the ISO 8601 UTC format (yyyy-MM-ddâTâHH:mm:ss.SSSZ).</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li>
+                                                            <p class="Tablebullet">If not supplied, will default to 23:59:59 of âYesterdayâsâ date.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">The maxiumum number of days between the packetStartDateTime and packetEndDateTime cannot exceed 90 days. </p>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">Date-Time. Optional.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText">
+                                        <br /><b>Responses</b>: If task completes, Status Code 201 is returned with a requestId in the response body.</p>
+                                    <p class="BodyText"><b>Errors</b>: An error code is returned under the following conditions:</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 401 â âUnauthorized. Token not found, expired or invalid.â</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 400 â âpacketEndDateTime is before&#160;packetStartDateTime.â</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 400 â âDate provided is not in a valid format.â</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 400 â âAccount name not provided.â</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 400 â&#160; âpacketStartDateTime/packetEndDateTime is a future date.â</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 400 â âOffset value is a negative value.â</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 400 â âpacketStartDateTime is older than 90 days.â</p>
+                                        </li>
+                                    </ul>
+                                    <p class="Examples">&#160;</p>
+                                    <p class="Examples">JSON Example: Raw Query Sample Request </p>
+                                    <p class="Code">{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;"rawQuerySample":</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName":"teamrest",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"packetStartDateTime":" 2017-08-09T10:25:00Z",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"packetEndDateTime":" 2017-08-11T10:10:00Z",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"zoneName": "apexcnamedemo1.com."</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">}</p>
+                                    <h3 class="Heading3">Retrieving Raw Query Sample Report</h3>
+                                    <p class="BodyText"><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://ai.ultradns.com/requests/{requestID}</p>
+                                    <p class="BodyText">
+                                        <br /><b>Parameters</b>: Must contain a <span class="CrossReference"><a href="#Report_Request_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" xrefformat="{paratext}">ReportRequest DTO</a></span></p>
+                                    <p class="BodyText"><b>Body</b>: None</p>
+                                    <p class="p_25"><b>Response</b>: If task completes, Status Code 200 OK is returned with a <span class="CrossReference"><a href="#Raw_Query_Sample_Report_Output_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" xrefformat="{paratext}">Raw Query Sample Report Output  DTO </a></span>in the response body. Each value is comma-separated.</p>
+                                    <p class="BodyText"><b>Errors</b>: An error code is returned under the following conditions:</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 401 â âUnauthorized. Token not found, expired or invalid.â</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">Error Code 404 â âNo report with the given ID was requested before.â</p>
+                                        </li>
+                                    </ul>
+                                    <h3 class="Heading3">Report Request ID DTO</h3>
+                                    <p>The requestID is a randomly generated ID of letters and numbers sent to the user after the successful request for a report.</p>
+                                    <p class="Caption"><a name="Report_Request_DTO"></a>ReportRequest DTO</p>
+                                    <table class="table_1" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_175" style="width: 143px;">
+                                        </col>
+                                        <col class="col_120" style="width: 716px;">
+                                        </col>
+                                        <col class="col_20" style="width: 135px;">
+                                        </col>
+                                        <tr>
+                                            <td class="td_34" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                <p class="BodyText_15">Field</p>
+                                            </td>
+                                            <td class="td_42" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                <p class="BodyText_15">Description</p>
+                                            </td>
+                                            <td class="td_42" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                <p class="BodyText_15">Type</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr_39">
+                                            <td class="td_21" style="text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                <p class="BodyText_8"><b>requestID</b>
+                                                </p>
+                                            </td>
+                                            <td class="td_22" style="text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                <p class="BodyText_12">The requestID that is provided to the user once a request for a report has been made.</p>
+                                                <ul style="list-style-type: square;">
+                                                    <li>
+                                                        <p class="Bulletedtext">For the Projected Query Volumes report, the requestID will have the following prefix: PQV.</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="td_22" style="text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                <p class="BodyText_12" style="text-align: left;">String. </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p class="Examples">JSON Example: Request ID return</p>
+                                    <p class="Code">Status 201 Created<br></br>{<br></br>&#160;&#160;"requestId": "PQV-d5a4c7ce"<br></br>}</p>
+                                    <p class="Caption">&#160;</p>
+                                    <p class="Caption"><a name="Raw_Query_Sample_Report_Output_DTO"></a>Raw Query Sample Report Output  DTO </p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_90">
+                                        </col>
+                                        <col class="col_179">
+                                        </col>
+                                        <col class="col_168">
+                                        </col>
+                                        <thead>
+                                            <tr class="tr_28">
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Response Body</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Description</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_6">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">accountName</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The name of the Account being queried.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">udpTcpIndicator</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Will return either UDP or TCP.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_47">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">tldSldIndicator</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Will return Top Level Domain or Server Level Domain value of either TLD or SLD server.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_2">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">queryResponseIndicator</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Query response indicator. Will return either Query or Response.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_48">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">responseMicroSet</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Will return either the response in micro seconds or a NULL value if a response is not matched to a query.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">ucapPacketErr</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Packet parsing error in ucap. Will return:<br></br>0 = No Error <br></br>1 = IP Header error <br></br>2 = DNS Header error <br></br>3 = Record Count error <br></br>4 = Query error <br></br>5 = Answer error <br></br>6 = Auth error <br></br>7 = Additional error</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">resolverPort</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Resolver port.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_8">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">resolverIP</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Resolver IP in binary.<br></br>4 bytes for IPv4, <br></br>16 bytes for IPv6.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer. IP address.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">truncatedIndicator</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Truncation indicator: <br></br>1 = Message truncated<br></br>0 = Not truncated</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_30">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">recursionDesired</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Recursion desired indicator. 1=True<br></br>2=False</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_7">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">recursionAvailable</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Recursive available indicator. 1=True<br></br>2=False</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">rcode</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Response Code:&#160; <br></br>0 = NOERROR<br></br>1 = FORMERR<br></br>2 = SERVFAIL<br></br>3 = NXDOMAIN<br></br>4 = NOTIMP<br></br>5 = REFUSED</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">qdcount</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The query count.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_49">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">packetId</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Packet identifier. This unique identifier is produced in the capture application from a timestamp, node, and sequence number.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_7">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">packetDatetime</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Packet date/time. A timestamp when the packet was received by the capture process.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Date-Time.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_48">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">opcode</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The query code: <br></br>0 = QUERY<br></br>1 = IQUERY <br></br>2 = STATUS</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_7">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">dnsMsgLength</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Length of the DNS message. Excludes ether/IP/UDP/TCP headers.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">dnsId</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The DNS Identifier. An ID generated by the client and returned by the resolver.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">clientPort</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">The client port.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">clientIp</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Client IP in either binary.<br></br>4 bytes for IPv4<br></br>16 bytes for IPv6</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer. IP address</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">checkingDisabled</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Checking disabled indicator: <br></br>1 = True<br></br>2 = False</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">authenticDataIndicator</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Authentic data indicator: <br></br>1 = True<br></br>2 = False</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">authenticAnswerIndicator</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Authoritative answer indicator: <br></br>1 = Authoritative <br></br>0 = Non-Authoritative</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">arcount</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">The Additional Record count. </p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">ancount</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">The Answer Record count.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">nscount</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">The Authority record count.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">qname</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">The query name.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">qtype</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The Query type.<br></br>1 = A <br></br>5 = CNAME<br></br>6 = SOA<br></br>28 = AAAA etc.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">zoneName</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">The Zone Name being queried. </p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_28">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_2">ipVersion</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The IP version being used by the zone. <br></br>IPv4 = 4<br></br>IPv6 = 6</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NormalWeb_1">Integer. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="Examples">JSON Example: Retrieving Raw Query Sample Report</p>
+                                    <p class="Code">&#160;&#160;&#160; {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "accountName": "teamrest",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "udpTcpIndicator": "UDP",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tldSldIndicator": "SLD",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "queryResponseIndicator": "Query",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "responseMicroSec": null,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ucapPacketErr": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "resolverPort": 53,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "resolverIp": "10.31.147.7",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "truncatedIndicator": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "recursionDesired": 1,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "recursionAvailable": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "rcode": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "qdcount": 1,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "packetId": "6267557462119846686",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "packetDateTime": 2016-03-29T19:21:22.769Z,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "opcode": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "dnsMessageLength": 47,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "dnsId": "64586",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientPort": 53194,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientIp": "10.33.162.158",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "checkingDisabled": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authenticDataIndicator": 1,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authenticAnswerIndicator": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "arcount": 1,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ancount": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "nscount": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "qname": "apexcnamedemo1.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "qtype": "A",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "zoneName": "apexcnamedemo1.com.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ipVersion": "4"</p>
+                                    <p class="Code">&#160;&#160;&#160; }</p>
+                                    <p class="BodyText">&#160;</p>
+                                    <p class="BodyText">The Raw Query Sample Report can be returned in the .CSV format. See the <span class="CrossReference"><a href="../Introduction.htm#_Ref490648854" class="ParaTextOnly MCXref xref xrefParaTextOnly" xrefformat="{paratext}">Calling the APIs</a></span>section for further details.</p>
+                                    <p class="Examples">.CSV Example: Raw Query Sample Report</p>
+                                    <p class="Code">Account Name,UDP / TCP,TLD / SLD,Query / Response,Response Time (in Î¼s),Ucap Packet Error,Resolver Port,Response IP,Truncated Indicator,Recursion Desired,Recursion Available,Response code,Question Record count,Packet Id,Packet Date Time,Opcode,DNS Message Length,DNS Id,Client Port,Client IP,Checking Disabled,Authentic Data Indicator,Authentic Answer Indicator,Additional Record Count,Answer Record Count,Namespace Record Count,QName,QType,Zone Name,IP Version</p>
+                                    <p class="Code">GTV8,UDP,SLD,Query,,0,53,204.74.108.1,0,1,0,0,1,6524704301611519106,2018-02-20T18:25:02.298Z,0,32,60455,39787,107.21.211.150,0,0,0,0,0,0,gmon-n.invalid.,SOA,gmon-n.invalid.,4</p>
+                                    <p class="Code">GTV8,UDP,SLD,Response,163,0,53,204.74.108.1,0,1,0,0,1,6524704301611519269,2018-02-20T18:25:02.298Z,0,143,60455,39787,107.21.211.150,0,0,1,0,1,1,gmon-n.invalid.,SOA,gmon-n.invalid.,4</p>
+                                    <p class="Code">GTV8,UDP,SLD,Query,,0,53,204.74.108.1,0,1,0,0,1,6524704305906574096,2018-02-20T18:25:03.385Z,0,32,37375,46677,107.21.211.150,0,0,0,0,0,0,gmon-n.invalid.,SOA,gmon-n.invalid.,4</p>
+                                    <p class="BodyText">&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

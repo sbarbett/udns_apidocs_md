@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Zone API</title>
+        <link href="../../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1 class="Heading1"><a name="_Toc36651603"></a>Zone API</h1>
+                                    <p class="BodyText">A DNS Zone is a portion of a DNS Domain separated for administrative control. You can think of it as a container for individual DNS Resource Records. Zones (domains) are the basic building blocks of DNS. UltraDNS defines three classes of zone types: Primary, Secondary, and Alias. </p>
+                                    <ul style="list-style-type: square;">
+                                        <li>A Primary Zone is the master copy of the zone data. UltraDNS manages Primary zones. They may include advanced features like pools.</li>
+                                        <li>A Secondary Zone is a copy of the primary zone, and is owned and controlled by a nameserver outside the UltraDNS system. UltraDNS retrieves a copy via zone transfer of the zone from the remote nameserver. Secondary zones are read-only (except for requests for transfer) and cannot contain advanced UltraDNS features.</li>
+                                        <li>An Alias Zone is a virtual copy of a Primary zone; itâs basically the primary zone under a different zone name. They are read-only, but contain all of the advanced features of the primary zones they alias.</li>
+                                    </ul>
+                                    <p class="BodyText">This section displays the details on the Zone API calls available for use, as well as detailed Zone DTO (Data Transfer Object) information. </p>
+                                    <p class="BodyText">When DTOs are required in the body of the call, or are returned as a response, cross reference links are provided to the specific table containing the details of DTO contents. </p>
+                                    <table style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;" class="table_1">
+                                        <col style="width: 81px;" />
+                                        <col style="width: 917px;" />
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: middle;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>
+                                                        <img src="../../Resources/Images/MSP_User_Guide/Two Factor Mobile Authentication_68x68.png" style="width: 68;height: 68;" class="img_3" />
+                                                    </p>
+                                                </td>
+                                                <td style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="NOTEText">To escape forward slashes in zone names (for example, a reverse zone with the name 0/24.50.156.193.in-addr.arpa), use %2F.</p>
+                                                    <p class="NOTEText">In our example URIs, to specify the reverse zone noted above, follow this example - </p>
+                                                    <p class="NOTEText">&#160;</p>
+                                                    <p class="NOTEText">
+                                                        <p class="Code">https://api.ultradns.com/zones/0%2F24.50.156.193.in-addr.arpa.</p>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a style="font-size: 16pt;" href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Create a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Create Zone API allows you to create a Primary, Secondary, or Alias Zone, and furthermore, allows you to create a Zone âfrom scratchâ by copying another zone via an uploaded file or by Zone transfer. The JSON examples provided below give a sample of each type of zone create call.</p>
+                                            <p class="BodyText">Create a Zone is a POST call and is generated as follows:</p>
+                                            <p class="BodyText_2"><b>Method and URI:</b> </p>
+                                            <p class="Code">POST https://api.ultradns.com/zones </p>
+                                            <p class="BodyText" style="color: #000000;">
+                                                <p class="BodyText">&#160;</p>
+                                                <p class="BodyText"><b>Parameters</b>: None</p>
+                                            </p>
+                                            <p class="BodyText"><b>Body</b>: Must include <span class="CrossReference"><a href="Zone API DTOs.htm#Zone_Create_DTO" style="color: #f4a460;" class="MCXref xref">Zone Create DTO</a></span> parameters.</p>
+                                            <p class="BodyText">The Zone Create DTO requires the inclusion of a <b>Zone Properties DTO</b>. Depending on the type of Zone you are creating, you will also require a <b>Primary Zone DTO</b>, a <b>Secondary Zone DTO</b> or an <b>Alias Zone DTO</b>.</p>
+                                            <p class="BodyText"><b>Response</b>:&#160;If task completes, Status Code 201 is returned with an appropriate message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If creation happens in the background, a Status Code 202 is returned with a status response message of âPendingâ along with an X-Task-Id header in body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} already exists.</li>
+                                                <li>If {zoneName} is not valid.</li>
+                                                <li>If you don't have permission to create zones.</li>
+                                                <li>If creating a Primary Zone via copy, if creating an Alias, or if the original zone is not a Primary zone.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651605"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Delete a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Delete Zone API allows you to delete any zone you have the proper authority to delete. You cannot delete a primary zone if it has an Alias zone.</p>
+                                            <p class="BodyText">Delete Zone call is generated as follows:</p>
+                                            <p class="BodyText"><b>Method and URI:</b> </p>
+                                            <p class="Code">DELETE https://api.ultradns.com/zones/{zoneName}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters:</b> None</p>
+                                            <p class="BodyText"><b>Body:</b> None</p>
+                                            <p class="BodyText"><b>Response</b>: If delete happens immediately, Status Code 204 returned with no body content. </p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If delete happens in the background, a Status Code 202 is returned with a status response message of Pending, along with an X-Task-Id header in body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If you do not have permission to delete {zoneName}.</li>
+                                                <li>If {zoneName} does not exist.</li>
+                                            </ul>
+                                            <p class="Examples">JSON&#160;Example:&#160;Delete Zone with Change Comment</p>
+                                            <p class="Code">{</p>
+                                            <p class="Code">"changeComment": "Deleting Zone as agreed"</p>
+                                            <p class="Code">}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref395100959"></a><a name="_Toc36651606"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Get Zone Metadata</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Get Zone Metadata call returns Zone information for the specified {zoneName} in the form of a <span class="CrossReference"><a href="Zone API DTOs.htm#Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Zone DTO</a></span>. This DTO can in turn be used for other calls as needed. </p>
+                                            <p style="font-weight: bold;">Method and URI: </p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/{zoneName}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters:</b> None</p>
+                                            <p class="BodyText"><b>Body:</b> None</p>
+                                            <p class="BodyText"><b>Response:</b> If task completes, Status Code 200 OK is returned with a <span class="CrossReference"><a href="Zone API DTOs.htm#Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Zone DTO</a></span> in the body content. Example responses for different zone types are shown below.</p>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} does not exist.</li>
+                                                <li>If you do not have permission to read {zoneName}.</li>
+                                            </ul>
+                                            <p class="Examples">JSON Example: Responses to Primary Zone â Get Metadata </p>
+                                            <p class="Code" style="font-family: 'Courier New';">{<br />&#160;&#160;&#160;&#160;"properties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordCount": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2014-07-01T22:13Z"<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"registrarInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"registrar": "Generic Domain Name Registrar",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"whoisExpiration": "2015-01-01 00:00:00",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServers": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ok": ["PDNS1.ULTRADNS.NET", "PDNS2.ULTRADNS.NET"],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"restrictIpList": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"startIP": "10.20.30.40",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"endIP": "20.20.20.20",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"comment": "Comment"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;"tsig": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyName":"Key",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "This would be a hash if it was real",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "TSIG for primary-example.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigAlgorithm": "hmac-sha256"<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"notifyAddresses": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddress": "2.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "East Coast Server"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddress": "5.6.7.8",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "West Coast Server"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;]<br />}<br /></p>
+                                            <p>
+                                                <p class="Examples">&#160;</p>
+                                                <p class="Examples">JSON Example: Secondary Zone â Get Metadata</p>
+                                                <p class="Code">{<br />&#160;&#160;&#160;&#160;"properties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "secondary-example.com.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "SECONDARY",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordCount": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2014-07-01T22:13Z"<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"primaryNameServers": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIpList": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp1": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "1.2.3.4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value1"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp2": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "2.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value2"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp3": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "3.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value3"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"transferStatusDetails": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "lastRefresh": "06/13/18 06:07:45 AM GMT",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "nextRefresh": "06/13/18 07:07:45 AM GMT",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "lastRefreshStatus": "FAILED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "lastRefreshStatusMessage": "Failed to transfer zone 'secondary-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; example.com.' from host: 54.209.41.82; reason: <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; java.net.SocketTimeoutException"<br />&#160;&#160;&#160; &#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />}</p>
+                                            </p>
+                                            <p class="Examples">JSON Example: Alias Zone â Get Metadata</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"properties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "alias-example.com.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "ALIAS",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordCount": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2014-07-01T22:13Z"<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"originalZoneName": "example.com."<br />}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="Migration_Steps_for_List_Metadata_for_Zones-v3"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Migration Steps for List Metadata for Zones â v3</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Please follow the steps below to migrate from the previous method of using /v1, /v2, or no versioning in the API call, to our new API format for <a href="#Migration_Steps_for_List_Metadata_for_Zones-v3" style="color: #f4a460;" class="MCXref xref">Migration Steps for List Metadata for Zones â v3</a>.</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Add the /v3 version in your URL as shown below.</p>
+                                                    <ol style="list-style-type: lower-alpha;">
+                                                        <li value="1">
+                                                            <p class="Code"><b>Your existing URL format</b>:<br /><br />https://api.ultradns.com/zones<br />https://api.ultradns.com/v1/zones<br />https://api.ultradns.com/v2/zones</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p class="Code"><b>Your new URL format</b>:<br /><br />https://api.ultradns.com/v3/zones</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li value="2">
+                                                    <p>The following content emphasizes the changes in how you will retrieve the first page of results.</p>
+                                                    <ol style="list-style-type: lower-alpha;">
+                                                        <li value="1">
+                                                            <p>There are no changes required in retrieving the first page of result details. Performing the above URL change will be sufficient.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>There is a difference in the pagination behavior when using the new /v3 call. The new version does not return the previously used <span style="font-family: 'Times New Roman'; color: #000000;">resultInfo</span> section, instead, it returns a new section called <span style="font-family: 'Times New Roman'; color: #000000;">cursorInfo</span>. This section provides the cursor-based information used to navigate to the different pages of results that can be returned. The cursorInfo section contains four values â <b>first</b>, <b>next</b>, <b>previous</b>, and <b>last</b>.</p>
+                                                            <ol style="list-style-type: lower-roman;">
+                                                                <li value="1">
+                                                                    <p>If there are additional pages of details that can be navigated to, the cursorInfo section will contain the <b>previous</b> and <b>first</b> values.</p>
+                                                                </li>
+                                                                <li value="2">
+                                                                    <p>If there are no additional pages to navigate to, the cursorInfo section will be empty.</p>
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <p>The following API example shows a cursorInfo section with <b>next</b> and <b>last</b> values available.</p>
+                                            <p><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/v3/zones/</p>
+                                            <p class="Examples">JSON Example: List Metadata for Zones v3</p>
+                                            <p class="Code">{</p>
+                                            <p class="Code">&#160;&#160;&#160;"queryInfo": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"q": "",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"sort": "name",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"limit": 2</p>
+                                            <p class="Code">&#160;&#160;&#160;},</p>
+                                            <p class="Code" style="background-color: #ffff00;color: #000000;">&#160;&#160;&#160;"cursorInfo": {</p>
+                                            <p class="Code" style="background-color: #ffff00;color: #000000;">&#160;&#160;&#160;&#160;&#160;&#160;"next": "em9uZTIuY29tLjpORVhU",</p>
+                                            <p class="Code" style="background-color: #ffff00;color: #000000;">&#160;&#160;&#160;&#160;&#160;&#160;"last": "fjpMQVNU"</p>
+                                            <p class="Code">&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;"zones": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone1.com.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "SIGNED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "SUSPENDED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-11T15:42Z"</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone2.com.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "ACTIVE",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-12T12:41Z"</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;]</p>
+                                            <p class="Code">}</p>
+                                            <p>&#160;</p>
+                                            <ol start="3">
+                                                <li value="3">
+                                                    <p>The following emphasizes the changes in how you will retrieve additional pages of results, besides the first.</p>
+                                                    <ol style="list-style-type: lower-alpha;">
+                                                        <li value="1">
+                                                            <p>The new parameter <b>cursor</b> is required to navigate to other pages in the URI.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>For example, if you are attempting to retrieve the next page of results, select (copy) the value of the <b>next</b> attribute from the cusorInfo section (from the response) and add it to the cursor parameter in the request URL. &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <p><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/v3/zones?<span style="background-color: #ffff00; color: #000000;">cursor</span>=em9uZTIuY29tLjpORVhU</p>
+                                            <p class="Examples">JSON Example: List Metadata for Zones - cursorInfo Provided</p>
+                                            <p class="Code">{</p>
+                                            <p class="Code">&#160;&#160;&#160;"queryInfo": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"q": "em9uZTIuY29tLjpORVhU",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"sort": "name",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"reverse": false,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"limit": 2</p>
+                                            <p class="Code">&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;"cursorInfo": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"previous": "em9uZTMuY29tLjpQUkVWSU9VUw==",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"first": "OkZJUlNU"</p>
+                                            <p class="Code">&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;"zones": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "zone3.com.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "TestAccount",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "SIGNED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "SUSPENDED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "test",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 40,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2022-01-11T15:42Z"</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;]</p>
+                                            <p class="Code">}</p>
+                                            <p>&#160;</p>
+                                            <p>Similarly, select the values from the <b>first</b>, <b>last</b>, or <b>previous</b> attribute from the cusorInfo section in the response to navigate to that desired page.<br /></p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="List"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="List_Metadata_for_Zones_v3-Cursor_Based"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">List Metadata for Zones v3 - Cursor Based</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>The List Metadata for Zones v3 call differs from the Get Zone Metadata call in that it provides a summary list of all zones (or all zones of a specified type), rather than metadata for a particular zone.</p>
+                                            <p>Using the newest /v3 version, the List Metadata for Zones API is now utilizing cursor-based pagination to return specified items in a dataset. The response will contain the <span style="font-family: 'Times New Roman'; color: #000000;">cursorInfo</span> parameter with the <b>next</b>, <b>previous</b>, <b>first</b> and <b>last</b> values displayed. </p>
+                                            <p>Additionally, using the /v3 version of this API call, will now return the full list of requested zones, and alleviate some customers that previously had to use both versions to get the full list.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p>Add either the <b>next</b> or <b>previous</b> value in the request parameter of a subsequent GET call to view the details of the next set of zones (the number of responses per page are determined by the <b>limit</b> parameter).</p>
+                                                </li>
+                                                <li>
+                                                    <p>The <b>first</b> and <b>last</b> values can be added in the request parameter of a subsequent GET call to view the first and the last page of details.</p>
+                                                </li>
+                                            </ul>
+                                            <p>The List Metadata for Zones call is a GET call and is generated as follows:</p>
+                                            <p><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/v3/zones</p>
+                                            <p><b>Parameters</b>: The following table lists the supported parameters for customized search results:</p>
+                                            <p class="Caption">Parameters for List Metadata for Zones - v3</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_17" style="width: 112px;" />
+                                                <col class="col_18" style="width: 833px;" />
+                                                <col class="col_19" style="width: 55px;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_3" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;background-color: #7f7f7f;">
+                                                            <p class="TableHeader_1">Parameter</p>
+                                                        </th>
+                                                        <th class="th_4" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;background-color: #7f7f7f;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_4" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;background-color: #7f7f7f;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">q</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The query used to construct the list. Query operators are:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><i style="font-weight: bold; font-style: normal;">name</i> â Name of the zone (allowing for partial string matches).</p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><i style="font-weight: bold; font-style: normal;">zone_type</i> â Returns zones of an identified type. If not specified, all zone types are returned. Valid values are:</p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p class="Tablebullet">ALIAS</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="Tablebullet">PRIMARY </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="Tablebullet">SECONDARY</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><i style="font-weight: bold; font-style: normal;">zone_status</i> â Returns zones with the identified status. Active zones are returned if not specified. Valid values are:</p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p class="Tablebullet"> ACTIVE</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="Tablebullet"> SUSPENDED</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="Tablebullet">ALL.</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><i style="font-weight: bold; font-style: normal;">account_name</i> â Returns the zones based upon the account. If not specified, zones of all of the accounts that the user has access to will be returned. </p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p class="Tablebullet"> If the account name has space characters in it, the space characters need to be replaced with â%20.â For example, account âtest accountâ will need to be âtest%20account.â</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>network</b> â Only applicable for those accounts with the UltraDNS<sup>2</sup> feature enabled. Returns zones that are either on the UltraDNS (standard) network or are part of the UltraDNS2 service network. Valid values are:</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>ultra1</b> (standard UltraDNS)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>ultra2</b>
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">cursor</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>Can be provided after the initial List Metadata for Zones request. Use with the cursorInfo details for fetching the next, previous, first or last page(s) of details.</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String. Optional.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">limit</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The maximum number of rows requested. Default number of requests returned is 100, but the maximum value supported is 1,000.</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Integer. Optional.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>&#160;</p>
+                                            <p><b>Body</b>: None</p>
+                                            <p><b>Response</b>: If task completes, Status Code 200 OK is returned with a Zone List v3 DTO in the body content.</p>
+                                            <p><b>Errors</b>: An error is returned in following cases:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p>If you do not have permission to read zones.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="Examples">JSON Example: List Metadata for Zones Response</p>
+                                            <p class="Code">{</p>
+                                            <p class="Code">&#160;&#160;&#160;"queryInfo": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"q": "",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"limit": 2,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"cursor": "MC0teC5uZXQu"</p>
+                                            <p class="Code">&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;"cursorInfo": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"next": "Y3Vyc29yT3BlcmF0aW9uPU5FWFQmY3Vyc29yPWFiYy5jb20u",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"last": "fjpMQVNU"</p>
+                                            <p class="Code">&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;"zones": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "0-0-0-0-0-0-0-0-0-0-0-0-0-45-0-0-0-0-0-0-0-0-0-0-0-0-0.info.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "javauie2e",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "SECONDARY",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "ACTIVE",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 15,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2019-11-20T14:20Z"</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code"> &#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "0-0-club.club.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "javauie2e",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "SECONDARY",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "ACTIVE",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 12,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2019-11-20T14:22Z"</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;]</p>
+                                            <p class="Code">}</p>
+                                            <p>&#160;</p>
+                                            <p class="Examples">JSON Example: List Metadata of Zones Response with cursorInfo Provided</p>
+                                            <p class="Code">{</p>
+                                            <p class="Code">&#160;&#160;&#160;"zones": [</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "100maruolo.online.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "javauie2e",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "SECONDARY",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "ACTIVE",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 11,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2019-11-20T14:32Z"</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;},</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;{</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "100maruolo.press.",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "javauie2e",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "SECONDARY",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": "ACTIVE",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "",</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"resourceRecordCount": 11,</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2019-11-20T14:32Z"</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;&#160;&#160;&#160;}</p>
+                                            <p class="Code">&#160;&#160;],</p>
+                                            <p class="Code">}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="List_Metadata_For_Zones-Soon_to_be_Deprecated"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">List Metadata for Zones (Deprecated)</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">&#160;</p>
+                                            <table style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;" class="table_1">
+                                                <col style="width: 81px;" />
+                                                <col style="width: 917px;" />
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="vertical-align: middle;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <img src="../../Resources/Images/MSP_User_Guide/Two Factor Mobile Authentication_68x68.png" style="width: 68;height: 68;" class="img_3" />
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p><b style="text-decoration: underline;">This call has been officially deprecated as of 2022-09-30.</b>
+                                                            </p>
+                                                            <p>We highly recommend that users begin to utilize the <a href="#Migration_Steps_for_List_Metadata_for_Zones-v3" style="color: #ffa500;" class="MCXref xref">Migration Steps for List Metadata for Zones â v3</a> call as soon as possible to prevent any errors or confusion.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><b>As we continue to make improvements to our RestAPI performance, we are requesting that users no longer use  the List Metadata for Zones API call that references either the /v1 or /v2 versioning, or no versioning at all.</b>
+                                            </p>
+                                            <table style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;" class="table_1">
+                                                <col style="width: 81px;" />
+                                                <col style="width: 917px;" />
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="vertical-align: middle;text-align: center;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>
+                                                                <img src="../../Resources/Images/MSP_User_Guide/Two Factor Mobile Authentication_68x68.png" style="width: 68;height: 68;" class="img_3" />
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>Please note that for users continuing to use /v1, /v2, or no version specification in the List Metadata for Zones API call now that these calls are deprecated, we will no longer provide support resolution for <b style="text-decoration: underline;">offset-based pagination</b>.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Code">GET https://api.ultradns.com/v1/zones</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Code">GET https://api.ultradns.com/v2/zones</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Code">GET https://api.ultradns.com/zones</p>
+                                                </li>
+                                            </ul>
+                                            <p style="font-weight: bold;">Instead, we highly recommend that all users begin to adopt the updated method to using this API as soon as possible; <a href="#List_Metadata_for_Zones-v3" style="color: #ffa500;font-weight: normal;" class="MCXref xref">Zone API</a>. Please refer to the following section for steps on how to migrate to the new API call - <a href="#Migration_Steps_for_List_Metadata_for_Zones-v3" style="color: #ffa500;font-weight: normal;" class="MCXref xref">Migration Steps for List Metadata for Zones â v3</a>.</p>
+                                            <p>Moving forward, our goal is that our customers will not need to specify a version, such as /v1 or v2, in any of our API calls on an ongoing basis. The version-less API URL automatically routes to the latest official version.</p>
+                                            <p>The List Metadata for Zones call differs from the Get Zone Metadata call in that it provides a summary list of all zones (or all zones of a specified type), rather than metadata for a particular zone. The List Metadata for zones call is a GET call and is generated as follows:</p>
+                                            <p><b>Method and URI</b>: </p>
+                                            <p class="Code">GET https://api.ultradns.com/zones/</p>
+                                            <p><b>Parameters</b>: Parameters are listed in the following table:</p>
+                                            <p class="BodyText_3" style="font-weight: normal;">
+                                                <p class="Caption">Parameters for List Metadata for Zones </p>
+                                            </p>
+                                            <table class="table_1" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;width: 70%;">
+                                                <col class="col_17" style="width: 134px;" />
+                                                <col class="col_18" style="width: 864px;" />
+                                                <col class="col_19" style="width: -322pt;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_3" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Parameter</p>
+                                                        </th>
+                                                        <th class="th_4" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_4" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">q</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The query used to construct the list. Query operators are:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><b>name</b> â Name of the zone (allowing for partial string matches).</p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><b>zone_type</b> â Returns zones of an identified type. If not specified, all zone types are returned. Valid values are ALIAS, PRIMARY, or SECONDARY.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><b>zone_status</b> â Returns zones with the identified status. Active zones are returned if not specified. Valid values are ACTIVE, SUSPENDED, or ALL. </p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><b>dnssec_status</b> â Returns zones based upon the dnssec status. Valid values are SIGNED or UNSIGNED. If not specified, both types of zones will be returned.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet"><b>account_name</b> â Returns the zones based upon the account. If not specified, zones of all of the accounts that the user has access to will be returned. </p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p class="Tablebullet"> If the account name has space characters in it, the space characters need to be replaced with â%20.â For example, account âtest accountâ will need to be âtest%20account.â</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">offset</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The position in the list for the first returned element (0 based). Default is â0.â</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Integer</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">limit</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The maximum number of rows requested. Default is 100.</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Integer</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">sort</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">The sort column used to order the list. The valid values are:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet">NAME (default sort column)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet">ACCOUNT_NAME</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet">ZONE_TYPE</p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">reverse</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">List is sorted in Ascending order by default, with the parameter value being <u style="font-weight: bold;">false</u>. Enter <u style="font-weight: bold;">true</u> to sort the list in Descending order by the sort column specified (or by Name if no sort value is entered).</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Boolean</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with a <span class="CrossReference"><a href="Zone API DTOs.htm#Zone_List_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Zone List DTO</a></span> in the body content. </p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If you do not have permission to read zones.</li>
+                                            </ul>
+                                            <p class="Examples">JSON Example: Zone List</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"queryInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"q":&#160;"",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sort":&#160;"NAME",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"reverse":&#160;false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"limit": 100<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"resultInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"totalCount": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"offset": 0,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"returnedCount": 3<br />&#160;&#160;&#160;&#160;} <br />&#160;&#160;&#160;&#160;"zones": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "alias-example.com.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "ALIAS",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordCount": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2014-07-01T22:13Z"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"originalZoneNameâ: "example.com."<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "primary-example.com.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "PRIMARY",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordCount": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2014-07-01T22:13Z"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"registrarInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"registrar": "Generic Domain Name Registrar",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"whoisExpiration": "2015-01-01 00:00:00",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServers": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ok": ["PDNS1.ULTRADNS.NET", "PDNS2.ULTRADNS.NET"],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"restrictIpList": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"startIP": "10.20.30.40",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"endIP": "20.20.20.20",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"comment": "Comment"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsig": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyName":"Key",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "This would be a hash if it was real,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "TSIG for primary-example.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigAlgorithm": "hmac-sha256"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddresses": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddress": "2.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "East Coast Server"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddress": "5.6.7.8",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "West Coast Server"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"properties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "secondary-example.com.",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accountName": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"owner": "example",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "SECONDARY",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordCount": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"dnssecStatus": "UNSIGNED",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"lastModifiedDateTime": "2014-07-01T22:13Z"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"primaryNameServers": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIpList": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp1": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "1.2.3.4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value1"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp2": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "2.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value2"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp3": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "3.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value3"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;],<br />}</p>
+                                        </div>
+                                    </div>
+                                    <p class="BodyText">&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651608"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Convert a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Convert Zone call converts a Secondary Zone into a Primary Zone. The Convert Zone call is a POST call and is generated as follows:</p>
+                                            <p><b>Method and URI</b>: </p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/{zoneName}/convert</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Optionally, can include the <a href="Zone API DTOs.htm" style="color: #ffa500;" class="MCXref xref">Zone DTOs</a> and the use of the changeComment field. If providing DTO fields, the "Content-Type: application/json" header is required.</p>
+                                            <p class="BodyText"><b>Response</b>: If conversion completes, Status Code 201 is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If conversion happens in the background, a Status Code 202 is returned along with an X-Task-ID header and a status message of âPendingâ in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} does not exist.</li>
+                                                <li>If you do not have write permission for {zoneName}.</li>
+                                                <li>If {zoneName} is not a secondary zone.</li>
+                                            </ul>
+                                            <p class="Examples">JSON Example:&#160;Convert Zone with Change Comment</p>
+                                            <p class="Code">{</p>
+                                            <p class="Code" style="text-indent: 0.5in;">"changeComment": "Converting zone 12/05/2020"</p>
+                                            <p class="Code">}</p>
+                                        </div>
+                                    </div>
+                                    <p class="BodyText">&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651609"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Unalias a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">Unaliasing a zone is the process of converting an Alias Zone into a Primary Zone. When you unalias a zone, the following changes happen:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>All of the data and zone configuration information is copied from the Primary to the Alias.</li>
+                                                <li>The Alias is converted into a Primary zone.</li>
+                                                <li>Any correlation between the original Primary and new Primary (formerly the Alias) is removed; the two are now wholly separate Primary zones.</li>
+                                            </ul>
+                                            <p class="BodyText">The Unalias call is a POST call and is generated as follows:</p>
+                                            <p><b>Method and URI</b>:</p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/{zoneName}/unalias</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters:</b> None</p>
+                                            <p class="BodyText"><b>Body:</b> Can include the following optional field. The "Content-Type: application/json"&#160;header is required.</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_45" style="width: 106pt;" />
+                                                <col class="col_36" style="width: 664px;" />
+                                                <col class="col_46" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_1" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_2" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_2" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">changeComment</p>
+                                                        </td>
+                                                        <td class="td_2" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>An optional field allowing users to create a comment for a zone operation using up to 512 characters of free text, which can be viewed and searched for via the Audit Log Report.</p>
+                                                            <p>Not applicable for Batch or JSON Patch calls. </p>
+                                                        </td>
+                                                        <td class="td_2" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><b>Response</b>: If task completes, Status Code 200 OK is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If task happens in the background, Status Code 202 is returned along with an X-Task-ID header and a status message of Pending in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} does not exist.</li>
+                                                <li>If you do not have permission to unalias {zoneName}.</li>
+                                                <li>If {zoneName} is a not an alias zone.</li>
+                                            </ul>
+                                            <p class="Bulletedtext">
+                                                <p class="Examples">JSON Example: Unalias Zone with Change Comment</p>
+                                                <p class="Code">{</p>
+                                                <p class="Code" style="text-indent: 0.5in;">"changeComment": "Unalias this zone. No longer required."</p>
+                                                <p class="Code">}</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="BodyText">&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref484509458"></a><a name="_Toc36651610"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Suspend a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">Suspending a zone allows you to temporarily stop serving data for a zone without deleting that zone. When you suspend a zone, the following changes happen:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>The zone cannot be updated via a PUT or PATCH</li>
+                                                <li>Performing a GET will still return zone data</li>
+                                            </ul>
+                                            <p class="BodyText">The Suspend call is a POST call and is generated as follows:</p>
+                                            <p><b>Method and URI</b>:</p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/{zoneName}/suspend</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Can include the following optional field. The "Content-Type: application/json"&#160;header is required.</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_45" style="width: 104pt;" />
+                                                <col class="col_36" style="width: 648px;" />
+                                                <col class="col_46" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_1" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_2" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_2" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">changeComment</p>
+                                                        </td>
+                                                        <td class="td_2" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>An optional field allowing users to create a comment for a zone operation using up to 512 characters of free text, which can be viewed and searched for via the Audit Log Report.</p>
+                                                            <p>Not applicable for Batch or JSON Patch calls. </p>
+                                                        </td>
+                                                        <td class="td_2" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">String.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><b>Response</b>: If task completes, Status Code 200 OK is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If task happens in the background, Status Code 202 is returned along with an X-Task-ID header and a status message of Pending in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} does not exist.</li>
+                                                <li>If you do not have permission to unalias {zoneName}.</li>
+                                                <li>If {zoneName} is a not an alias zone.</li>
+                                            </ul>
+                                            <p class="Bulletedtext">
+                                                <p class="Examples">JSON Example: Suspend a Zone with Change Comment</p>
+                                                <p class="Code">{</p>
+                                                <p class="Code" style="text-indent: 0.5in;">"changeComment": "Suspend this zone. No longer active."</p>
+                                                <p class="Code">}</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="BodyText">&#160;</p>
+                                    <h1 class="Heading1"><a name="_Ref484509468"></a><a name="_Toc36651611"></a>UnSuspend a Zone</h1>
+                                    <p class="BodyText">For users that need to perform the UnSuspend a Zone API call, please reach out to our Customer Support team for further assistance.</p>
+                                    <p class="BodyText">&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref497481380"></a><a name="_Toc36651612"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Update a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Update Zone call allows you to update certain aspects of either a Primary or a Secondary Zone. You <u style="font-weight: bold;">cannot</u> use this call to:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>Update an Alias Zone.</li>
+                                                <li>Specify Primary Name Servers for a Primary zone.</li>
+                                                <li>Specify restrict IPs, TSIG, or Notify addresses for a Secondary Zone.</li>
+                                            </ul>
+                                            <p class="BodyText">As this is a FULL update (replacing data) for Primary Zone updates, you must include any necessary restrict IPs, Notify addresses, or Primary Name Servers that apply. Any data not included with the update <b>will be deleted</b> from the Primary Zone. See also <span class="CrossReference"><a href="#_Ref395092542" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Partially Update a Zone</a></span>.</p>
+                                            <p class="BodyText">Update Zone is a PUT call and is generated as follows:</p>
+                                            <p><b>Method and URI:</b> </p>
+                                            <p class="Code">PUT https://api.ultradns.com/zones/{zoneName}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Must include a <span class="CrossReference"><a href="Zone API DTOs.htm#Zone_Create_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Zone Create DTO</a></span>, specifically containing information as follows:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>To update a Primary Zone, include only the createPrimaryInfo section. This section consists of a <span class="CrossReference"><a href="Zone API DTOs.htm#Primary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Primary Zone DTO</a></span>, of which you only need to provide the <b>restrictIPList</b>, <b>tsig</b>, and/or <b>notifyAddresses</b> sections.</li>
+                                                <li><b>IMPORTANT:</b> Because this is a full update, any restrictIPs, tsig, or notifyAddresses not included will be deleted from the Primary Zone (unless the zone inherits the setting from the account).</li>
+                                                <li>To update a Secondary Zone, include only the <i>createSecondaryInfo</i> section. This section consists of a <span class="CrossReference"><a href="Zone API DTOs.htm#Secondary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Secondary Zone DTO</a></span>, of which you only need to provide the <i>primaryNameServers</i> section.</li>
+                                                <li><b>IMPORTANT:</b> Because this is a full update, any primaryNameServers not included will be deleted from the Secondary Zone.</li>
+                                            </ul>
+                                            <p class="BodyText">Examples of the information to be provided are shown below. If additional sections are sent, they will be ignored.</p>
+                                            <p class="BodyText">For DTO reference, see the following tables:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li><span class="CrossReference"><a href="Zone API DTOs.htm#Zone_Create_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Zone Create DTO</a></span>
+                                                </li>
+                                                <li><span class="CrossReference"><a href="Zone API DTOs.htm#Primary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Primary Zone DTO</a></span>
+                                                </li>
+                                                <li><span class="CrossReference"><a href="Zone API DTOs.htm#Secondary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Secondary Zone DTO</a></span>
+                                                </li>
+                                            </ul>
+                                            <p><b>Response</b>: If task completes, Status Code 200 OK is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If task happens in the background, Status Code 202 is returned along with an X-Task-ID header and a status message of âPendingâ in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} does not exist.</li>
+                                                <li>If you do not have write permission for {zoneName}.</li>
+                                                <li>If zone is an Alias Zone (cannot update Alias zones).</li>
+                                                <li>If the wrong kind of data is submitted for a zone (see above for information required).</li>
+                                            </ul>
+                                            <p class="Examples_1">
+                                                <p class="Examples">JSON Example: Update Restrict IP information for Primary Zone</p>
+                                            </p>
+                                            <p class="Code">{&#160;&#160;&#160;&#160;<br /> &#160;&#160;&#160;"primaryCreateInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"restrictIPList": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"startIP": "10.20.30.40",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"endIP": "20.20.20.20",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"comment": "Comment"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]<br />&#160;&#160;&#160;&#160;},</p>
+                                            <p class="Code" style="text-indent: 0.5in;">"changeComment":"Updating zone"<br />}</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">JSON Example: Update TSIG and Notify information for Primary Zone</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"primaryCreateInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsig": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyName": "Key",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "This would be a hash if it was real",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "TSIG for primary-example.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigAlgorithm": "hmac-sha256"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddresses" : [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddress": "2.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "East Coast Server"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"notifyAddress": "5.6.7.8",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"description": "West Coast Server"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]<br />&#160;&#160;&#160;&#160;}<br />}</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">JSON Example: Update Primary Name Server information for Secondary Zone</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"secondaryCreateInfo": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"primaryNameServers": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIpList": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp1": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "1.2.3.4",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value1"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp2": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "2.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value2"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"nameServerIp3": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ip": "3.4.5.6",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKey": "key3",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"tsigKeyValue": "value3"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Ref395092542"></a><a name="_Ref395092546"></a><a name="_Ref395097737"></a><a name="_Toc36651613"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Partially Update a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Partial Update a Zone call is used to:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>Update the restrictIPs, TSIG key, and/or Notify Address information for a Primary zone without having to explicitly list all of them. Any Restrict IPs, TSIGs or Notify Addresses not included in the call are retained on the server.</li>
+                                                <li>Update the Primary Name Servers for a Secondary zone without having to explicitly list all of them. Any Primary Name Servers not included in the call are retained on the server.</li>
+                                            </ul>
+                                            <p class="BodyText">Alias zones cannot be updated.</p>
+                                            <p class="BodyText">Partially Update a Zone is a PATCH or a JSON PATCH call and is generated as follows:</p>
+                                            <p><b>Method and URI:</b> </p>
+                                            <p class="Code">PATCH https://api.ultradns.com/zones/[zoneName}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: For standard XML or JSON formatted calls, the body must include a <span class="CrossReference"><a href="Zone API DTOs.htm#Zone_Create_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Zone Create DTO</a></span>, specifically containing information as follows:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>To update a Primary Zone, include only the createPrimaryInfo section. This section consists of a <span class="CrossReference"><a href="Zone API DTOs.htm#Primary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Primary Zone DTO</a></span>, of which you only need to provide the restrictIpList, tsig, and/or notifyAddresses sections.</li>
+                                                <li>Because this is a partial update, any restrictIps, tsig, or notifyAddresses not included in the call will be retained on the Primary zone.</li>
+                                                <li>To update a Secondary Zone, include only the createSecondaryInfo section. This section consists of a <span class="CrossReference"><a href="Zone API DTOs.htm#Secondary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Secondary Zone DTO</a></span>, of which you only need to provide the primaryNameServers section, or the notificationEmailAddress.</li>
+                                                <li>Because this is a partial update, any primaryNameServers not included will be retained on the Secondary Zone. If additional sections are sent, they will be ignored.</li>
+                                            </ul>
+                                            <p class="BodyText">For <a href="../Making Updates via JSON PATCH.htm#_Making_Updates_via" title="link to JSON PATCH section of this document" class="Hyperlink" style="color: #000000;">JSON PATCH formatted updates</a>, the body must include a <span class="CrossReference"><a href="../Making Updates via JSON PATCH.htm#JSON_PATCH_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">JSON PATCH DTO</a></span>. </p>
+                                            <p class="BodyText">For DTO reference, see the following tables:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li><span class="CrossReference"><a href="../Making Updates via JSON PATCH.htm#JSON_PATCH_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">JSON PATCH DTO</a></span>
+                                                </li>
+                                                <li><span class="CrossReference"><a href="Zone API DTOs.htm#Zone_Create_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Zone Create DTO</a></span>
+                                                </li>
+                                                <li><span class="CrossReference"><a href="Zone API DTOs.htm#Primary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Primary Zone DTO</a></span>
+                                                </li>
+                                                <li><span class="CrossReference"><a href="Zone API DTOs.htm#Secondary_Zone_DTO" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Secondary Zone DTO</a></span>
+                                                </li>
+                                            </ul>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with an appropriate status message in the response body.</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If task happens in the background, Status Code 202 is returned along with an X-Task-ID header and status message of Pending in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} does not exist.</li>
+                                                <li>If you do not have write permission for {zoneName}.</li>
+                                                <li>If zone is an Alias Zone (Alias Zones cannot be updated).</li>
+                                                <li>If the wrong kind of data is submitted for a zone (see above for information required).</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651614"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Request Zone Transfer</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The Request Zone Transfer call sends an AXFR request through a Secondary Zone, to the primary name server in order to update the Secondary Zone with information from the Primary Zone.</p>
+                                            <p class="BodyText">The {zoneName} identified in the call should be the name of the Secondary Zone to be updated.</p>
+                                            <p class="BodyText">The Request Zone Transfer call is a POST call and is generated as follows:</p>
+                                            <p><b>Method and URI:</b> </p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/{zoneName}/transfer</p>
+                                            <p class="BodyText"><b>Parameters:</b> None</p>
+                                            <p class="BodyText"><b>Body:</b> None</p>
+                                            <p><b>Response</b>:&#160;If task completes, Status Code 200 OK is returned with an appropriate status message in the response body. </p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If task happens in the background, Status Code 202 is returned along with an X-Task-ID header and status message of Pending in the body content.</li>
+                                            </ul>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>If {zoneName} does not exist.</li>
+                                                <li>If you do not have permission to update {zoneName}.</li>
+                                                <li>If {zoneName} does not refer to a Secondary Zone.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Export a Zone</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">Exporting a Zone will create a task to export the zone details into a BIND file. Once the task has been completed the BIND file can be downloaded.</p>
+                                            <p><b>Method and URI:</b>
+                                            </p>
+                                            <p class="Code">POST https://api.ultradns.com/zones/export</p>
+                                            <p class="BodyText"><b>Parameters:</b> None</p>
+                                            <p class="BodyText"><b>Body:</b> The body must include the zonename that is being exported.</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_17" style="width: 117px;" />
+                                                <col class="col_18" style="width: 853px;" />
+                                                <col class="col_19" style="width: 34pt;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_3" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Parameter</p>
+                                                        </th>
+                                                        <th class="th_4" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_4" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_1" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>zoneNames</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>The name or names of the zones that are being exported, with or without the trailing dot.
+Multiple zone names must be comma separated.
+</p>
+                                                        </td>
+                                                        <td class="td_2" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5pt;padding-right: 5pt;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p>String.&#160;Must be a valid zone name.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><b>Response</b>:&#160;If task completes, Status Code 202 Accepted is returned along with an X-Task-ID header and status message of Pending in the body content. To check the status of the export, use the&#160;<a href="#Get_the_Status_of_a_Task" style="color: #ffa500;" class="MCXref xref">Get the Status of a Task</a> call.</p>
+                                            <p class="BodyText"><b>Errors:</b> An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p>If {zoneName} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p>If you do not have permission to export {zoneName}.</p>
+                                                </li>
+                                                <li>
+                                                    <p>If zoneNames contains more than 250 zone names for export.</p>
+                                                </li>
+                                            </ul>
+                                            <p>&#160;</p>
+                                            <p class="Examples">JSON&#160;Example:&#160;Export a Zone Body example</p>
+                                            <p class="Code">{<br />"zoneNames": ["name.com", "name2.com."]<br />}</p>
+                                            <p class="Examples">JSON&#160;Example:&#160;Export Zone BIND&#160;File Details</p>
+                                            <p class="Code">
+                                                <br />;File created: 12/01/2020 16:13<br />;Record count: 6<br />$ORIGIN 00-ben-doc-ns.com.<br />@	86400	IN	SOA udns1.ultradns.net. rajender\.aindla.example.biz. (<br />2018062747	;Serial<br />10800		;Refresh<br />3600		;Retry<br />2592000		;Expire<br />10800		;Minimum<br />)<br />@	86400	IN	NS	udns1.ultradns.net.<br />@	86400	IN	NS	udns2.ultradns.net.<br />www.momandpopgas.com	600	IN	A	1.1.1.1<br />;record belongs to the pool HealthProbeTest.com.00-ben-doc-ns.com.<br />HealthProbeTest.com	120	IN	A	6.5.4.3<br />mydeadpool.com	60	IN	A	2.2.2.2</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <h3 class="Heading3"><a name="Get_the_Status_of_a_Task"></a>Get the Status of a Task</h3>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/tasks/{taskId}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: Must include the specific Task ID.</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with a <span class="CrossReference"><a href="#Task_Dto" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Task DTO</a></span> in the body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {taskId} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you do not have permission to read {taskId}.</p>
+                                                </li>
+                                            </ul>
+                                            <p>&#160;</p>
+                                            <h3 class="Heading3"><a name="Get_the_Results_of_a_Task"></a>Get the Results of a Task</h3>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://api.ultradns.com/tasks/{taskId}/result</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: Must include a Task ID.</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 200 OK is returned with a <span class="CrossReference"><a href="#Task_Dto" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Task DTO</a></span> in the body content.</p>
+                                            <p class="BodyText">The content will be returned as a downloadable file. The name of the file will be the {taskId} that was submitted with the request. The file extension and content type are set by the background task and will be appropriate to the data returned.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If {taskId} does not exist.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If you do not have permission for the task associated with the supplied {taskId}.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">If task is not yet completed.</p>
+                                                </li>
+                                            </ul>
+                                            <h3 class="Heading3">Task DTO</h3>
+                                            <p class="BodyText">The Task DTO is used to describes the current state of a task.</p>
+                                            <p class="Caption"><a name="Task_Dto"></a>Task DTO</p>
+                                            <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                                <col class="col_6" style="width: 91pt;" />
+                                                <col class="col_96" style="width: 475px;" />
+                                                <col class="col_47" style="width: 187px;" />
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th_13" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Field</p>
+                                                        </th>
+                                                        <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Description</p>
+                                                        </th>
+                                                        <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableHeader_1">Type</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">taskId</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Id for the task.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">UUID</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">code</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Current state of the task.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Use one from: </p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="Tablebullet_4" style="font-weight: normal;">PENDING </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet_4" style="font-weight: normal;">IN_PROCESS</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet_4" style="font-weight: normal;">COMPLET</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet_4" style="font-weight: normal;">ERROR </p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">message</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">Current message for the task.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="BodyText">String</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody_3">resultUri</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="TableBody">If task is COMPLETE, the URI from where the resulting data can be downloaded.</p>
+                                                        </td>
+                                                        <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                            <p class="BodyText">URI</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="Examples">JSON Example: Task Status</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"taskId": "0b40c7dd-748d-4c49-8506-26f0c7d2ea9c",<br />&#160;&#160;&#160;&#160;"Code": "COMPLETE",<br />&#160;&#160;&#160;&#160;"message": "Processing complete",<br />&#160;&#160;&#160;&#160;"resultUri": "/tasks/0b40c7dd-748d-4c49-8506-26f0c7d2ea9c/result"<br />}</p>
+                                            <p class="BodyText">&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

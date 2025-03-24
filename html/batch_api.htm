@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation" lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Batch API</title>
+        <link href="../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1 class="Heading1"><a name="_Ref532217549"></a><a name="_Toc36651791"></a>Batch API</h1>
+                                    <p class="BodyText">The Batch API provides the ability to run multiple requests as a single unit. The Rest API will always process the individual requests sequentially, following the request order in the Batch API payload. The set of configuration changes contained amongst all of the requests in the batch will be committed to the UltraDNS configuration database, upon successful completion of all the requests </p>
+                                    <p class="BodyText">If any request in the batch fails, the batch request ends and all of the requests are then rolled back with an error message returned. </p>
+                                    <p class="BodyText">For instance, if there are four requests in a Batch API payload (A,B,C and D) and one of the requests fails (request C), the REST API will rollback everything contained in the Batch API request.</p>
+                                    <p class="BodyText">If your batch request contains GET calls only, using <span class="CrossReference"><a href="Batch Query API.htm#_Ref471981146" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Batch Query API</a></span> is typically more appropriate because if does not stop the execution when an individual call returns a 404 response status. </p>
+                                    <p class="BodyText">It is legal to put a single POST, PUT, PATCH, or DELETE call in a batch, but it will have the same semantics as making the single call directly.</p>
+                                    <table class="table_1" style="width: 100%;border-left-style: solid;border-left-width: 1pt;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1pt;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1pt;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_6" style="width: 64pt;" />
+                                        <col class="col_12" />
+                                        <tr>
+                                            <td class="td_39" style="text-align: center;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="NOTEText">
+                                                    <img src="../Resources/Images/Rest-API_User_Guide/Introduction_65x75.png" class="img_2" style="width: 65;height: 75;" />
+                                                </p>
+                                            </td>
+                                            <td class="td_35" style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="NOTEText">The current size limit for a BATCH API request is 1,000 records. If the records exceed 1,000, a 4xx validation error message will be returned.&#160; </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p class="BodyText_2">&#160;</p>
+                                    <p class="BodyText"><b>Asynchronous (Async)</b>
+                                    </p>
+                                    <p class="BodyText">Async is a new parameter that can be added to the method call for large Batch API requests that might time out. When this value is set to true, the Batch API will run the call as a background task, and provide an X-Task-ID that can be used to retrieve the status of the task. </p>
+                                    <p class="BodyText">The default value for async is false, so unless it is set to true, Batch API calls will run as normal.</p>
+                                    <table class="table_1" style="width: 60%;border-left-style: solid;border-left-width: 1pt;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1pt;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1pt;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_6" style="width: 64pt;" />
+                                        <col class="col_12" style="width: 915px;" />
+                                        <tr>
+                                            <td class="td_39" style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="NOTEText">
+                                                    <img src="../Resources/Images/Rest-API_User_Guide/Introduction_74x86.png" class="img_2" style="width: 74;height: 86;" />
+                                                </p>
+                                            </td>
+                                            <td class="td_35" style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="NOTEText">Depending on the size of your Batch (or Batch Query) request, and on the size of your UltraDNS dataset, the Batch request can take significant time to execute. In certain cases, its execution time may exceed the REST API service idle timeout, resulting in a 504 response status. </p>
+                                                <p class="NOTEText">&#160;</p>
+                                                <p class="NOTEText">When Batch (or Batch Query) is run in an asynchronous mode (by providing HTTP parameter async=true), it is not subjected to the REST API service idle timeout. Therefore, the asynchronous method should be preferred for the larger, more complex requests..</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651792"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Create a Batch Request</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">POST https://restapi.ultradns.com/v1/batch</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: Requires the use of a <span class="CrossReference"><a href="#_Ref507158936" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Batch Request DTO</a></span>.</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status code 200 OK is returned for the batch call itself, and a <span class="CrossReference"><a href="#_Ref396294055" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Batch Response DTO</a></span> in the body content. </p>
+                                            <p class="BodyText">NOTE: The Batch Response DTO contains individual status codes returned for each call included in the batch.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">Error DTOs will be embedded in the response for invalid requests.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="Bulletedtext">Error DTO returned when invalid methods or URIs are used.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">JSON Example: Batch API Request</p>
+                                            <p class="Code">[<br />&#160;&#160;{<br />&#160;&#160;&#160;&#160;"method": "POST",<br />&#160;&#160;&#160;&#160;"uri": "/v1/zones/example.invalid/rrsets/A/foo",<br />&#160;&#160;&#160;&#160;"body": {<br />&#160;&#160;&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;&#160;&#160;"rdata": ["1.2.3.4"]<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;},<br />&#160;&#160;{<br />&#160;&#160;&#160;&#160;"method": "POST",<br />&#160;&#160;&#160;&#160;"uri": "/v1/zones/example.invalid/rrsets/A/bar",<br />&#160;&#160;&#160;&#160;"body": {<br />&#160;&#160;&#160;&#160;&#160;&#160;"ttl": 300,<br />&#160;&#160;&#160;&#160;&#160;&#160;"rdata": ["10.20.30.40"]<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;},<br />&#160;&#160;{<br />&#160;&#160;&#160;&#160;"method": "DELETE",<br />&#160;&#160;&#160;&#160;"uri": "/v1/zones/example.invalid/rrsets/A/baz"<br />&#160;&#160;}<br />]</p>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">JSON Example: Batch API Response </p>
+                                            <p class="Code">[<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status":&#160;201,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"response": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"message":&#160;"SUCCESSFUL"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status":&#160;201,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"response": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"message":&#160;"SUCCESSFUL"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status":&#160;204<br />&#160;&#160;&#160;&#160;}<br />]</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651793"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Create a Batch Request using Async</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">The async parameter, when added to the method, allows you to create a Batch request and receive a taskID while the operation executes in the background instead of receiving a 504 response status due to timeout. </p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">POST https://restapi.ultradns.com/v1/batch?async=true</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Body</b>: Requires the use of a <span class="CrossReference"><a href="#_Ref507428965" class="ParaTextOnly MCXref xref xrefParaTextOnly" style="color: #ffa500;">Batch Request DTO </a></span>.</p>
+                                            <p class="BodyText">Once your Batch request is completed, and you have used the X-Task-Id to retrieve your result, your next step is to delete the task from the REST API.</p>
+                                            <p class="BodyText_2">&#160;</p>
+                                            <p class="BodyText_2"><span style="font-size: 12pt; font-weight: bold; color: #000000;">Method and URI:</span>
+                                            </p>
+                                            <p class="Code">DELETE https://restapi.ultradns.com/v1/tasks/{X-Task-Id}</p>
+                                            <p class="Bullet1"><b>Response</b>: If task completes, Status Code 204 is returned with no body content.</p>
+                                            <p class="Examples">JSON Example: Creating Batch Request for GlobalIP Groups with async=true</p>
+                                            <p class="Code">[<br />&#160; {<br />&#160;&#160;&#160; "method": "POST",<br /> &#160;&#160; "uri": "v1/accounts/teamrest/dirgroups/ip/foo",<br />&#160;&#160;&#160; "body": {<br />&#160;&#160;&#160;&#160;&#160; "name": "foo",<br />&#160;&#160;&#160;&#160;&#160; "description": "Sample ip group for foo",<br />&#160;&#160;&#160;&#160;&#160; "ips": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "cidr": "172.0.0.0/29"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "cidr": "172.0.0.8/29"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "cidr": "172.0.0.16/29"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160; }<br />&#160; },<br />&#160; {<br />&#160;&#160;&#160; "method": "POST",<br />&#160;&#160;&#160; "uri": "v1/accounts/teamrest/dirgroups/ip/bar",<br />&#160;&#160;&#160; "body": {<br />&#160;&#160;&#160;&#160;&#160; "name": "bar",<br />&#160;&#160;&#160;&#160;&#160; "description": "Sample ip group for bar",<br />&#160;&#160;&#160;&#160;&#160; "ips": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "cidr": "172.0.0.24/29"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "cidr": "172.0.0.32/29"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160; }<br />&#160; }<br />]</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Response</b>: Status code 202 is returned with a Pending message and an X-Task-Id in the header.</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"message": "Pending"<br />}</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651794"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Get Task Status of Async Batch Request via X-Task-Id</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">From the Headers section, use the X-Task-Id to check the status of your pending Batch API call.</p>
+                                            <p class="BodyText" style="text-align: center;">
+                                                <img src="../Resources/Images/Rest-API_User_Guide/Batch API_740x141.png" class="img_11" style="width: 740;height: 141;" />
+                                            </p>
+                                            <p class="Caption_1">Async X-Task-Id in the Headers Section</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://restapi.ultradns.com/v1/tasks/{X-Task-Id}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, see the JSON example response below.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If the X-Task-Id is not valid.</p>
+                                                </li>
+                                            </ul>
+                                            <p class="Examples">&#160;</p>
+                                            <p class="Examples">JSON Example: Response from X-Task-Id to retrieve Batch API request status</p>
+                                            <p class="Code">{<br />&#160;&#160;&#160;&#160;"taskId": "30f976cf-0d7a-48d0-99a6-002eed41868d",<br />&#160;&#160;&#160;&#160;"code": "COMPLETE",<br />&#160;&#160;&#160;&#160;"message": "Batch operation completed.",<br />&#160;&#160;&#160;&#160;"resultUri": /tasks/30f976cf-0d7a-48d0-99a6-002eed41868d/result"<br />}</p>
+                                            <p class="BodyText">When the âcodeâ parameter returns a âCOMPLETEâ message, you can use the âresultUriâ to check the result of your Batch request.</p>
+                                            <p class="BodyText">In the above example, two requests were made in the Batch request, so the response will contain the status of both requests.</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651795"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Get Results of Async Batch Request Using X-Task-Id</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">GET https://restapi.ultradns.com/v1/tasks/{resultUri]/result</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText">JSON Example: Response using resultUri to get the Batch API request</p>
+                                            <p class="Code">[<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": 201,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"response": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"message": "Successful"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"status": 201,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"response": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"message": "Successful"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />]</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="_Toc36651796"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Delete a Batch Request X-Task-Id</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p class="BodyText">Once your Batch request is completed, and you have used the X-Task-Id to retrieve your result, delete the task from the REST API.</p>
+                                            <p class="BodyText"><b>Method and URI</b>:</p>
+                                            <p class="Code">DELETE https://restapi.ultradns.com/v1/tasks/{X-Task-Id}</p>
+                                            <p class="BodyText">&#160;</p>
+                                            <p class="BodyText"><b>Parameters</b>: None</p>
+                                            <p class="BodyText"><b>Body</b>: None</p>
+                                            <p class="BodyText"><b>Response</b>: If task completes, Status Code 204 is returned with no body content.</p>
+                                            <p class="BodyText"><b>Errors</b>: An error is returned under the following conditions:</p>
+                                            <ul style="list-style-type: square;">
+                                                <li>
+                                                    <p class="Bulletedtext">If the X-Task-Id is not valid.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="Heading3"><a name="_Ref507428965"></a>Batch Request DTO </h3>
+                                    <p class="BodyText">A batch request is composed of a list of Batch Request DTOs. This is the structure used to request batch changes via the API calls.</p>
+                                    <p class="Caption"><a name="_Ref507158936"></a>Batch Request DTO</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_5" style="width: 103pt;" />
+                                        <col class="col_169" style="width: 715px;" />
+                                        <col class="col_5" style="width: 118px;" />
+                                        <thead>
+                                            <tr>
+                                                <th class="th_13" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Field</p>
+                                                </th>
+                                                <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Description</p>
+                                                </th>
+                                                <th class="th_14" style="text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="td_25" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody_3"><b>method</b>
+                                                    </p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The HTTP method that is used to submit this request. Valid values are POST, PUT, PATCH, and DELETE.</p>
+                                                    <p class="TableBody">GET is allowed, but is discouraged.</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_25" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody_3"><b>uri</b>
+                                                    </p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The path for the request, which includes any query parameters. </p>
+                                                    <p class="TableBody">Note that this is absolute, and not relative. It must start with /v1.</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_25" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody_3"><b>body</b>
+                                                    </p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Required for calls that require a body, otherwise ignored. This is the body that would be submitted for the specified method and uri.</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Object</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h3 class="Heading3"><a name="_Ref396294055"></a>Batch Response DTO</h3>
+                                    <p class="BodyText">This is the response sent for each of the Batch Request entries. Like the Batch Request, it is composed of a list of Batch Response DTOs</p>
+                                    <p class="Caption">Batch Response DTO</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_5" style="width: 88pt;" />
+                                        <col class="col_169" style="width: 736px;" />
+                                        <col class="col_5" style="width: 119px;" />
+                                        <thead>
+                                            <tr>
+                                                <th class="th_13" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Field</p>
+                                                </th>
+                                                <th class="th_14" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Description</p>
+                                                </th>
+                                                <th class="th_14" style="background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableHeader_1">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody_3">status</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The HTTP status code returned for each call in this batch request.</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Integer</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody_3">response</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The body returned for each call in this batch request.</p>
+                                                    <p class="TableBody">For any 204 status responses (no content) that are returned for successful Delete calls, a response body will not be present.</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Object</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_25" style="font-weight: bold;text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody_3">taskId</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Returned when a X-Task-ID is used to check the status of a Batch API call. (Retrieved from the Header section)</p>
+                                                </td>
+                                                <td class="td_26" style="text-align: left;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText_14">&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

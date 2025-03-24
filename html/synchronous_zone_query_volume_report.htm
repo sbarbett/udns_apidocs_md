@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5___Side_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Synchronous Zone Query Volume Report</title>
+        <link href="../../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h2 class="Heading2">Synchronous Zone Query Volume Report</h2>
+                                    <p class="BodyText">The purpose of the Synchronous Zone Query Volume Report is to provide aggregated zone query volumes for multiple zones on a monthly basis, or for a set period of time.</p>
+                                    <p class="BodyText"><b style="text-decoration: underline;">Key differences from the Zone Query Volume Report</b>
+                                    </p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p class="BodyText">The maximum time frame between the start and end date cannot exceed 7 days.</p>
+                                        </li>
+                                        <li>
+                                            <p class="BodyText">Synchronous in nature, so Report ID will be returned as results will be returned immediately.</p>
+                                        </li>
+                                        <li>
+                                            <p class="BodyText">Significantly more details returned for each zone.</p>
+                                        </li>
+                                        <li>
+                                            <p class="BodyText">No DTO required in the Body as this is a GET call.</p>
+                                        </li>
+                                    </ul>
+                                    <h3 class="Heading3">Synchronous Zone Query Volume Report DTOs</h3>
+                                    <p class="BodyText"><b>Method and URI:</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_resolution/query_volume/zone</p>
+                                    <p class="Caption">&#160;</p>
+                                    <p class="Caption"><a name="Synchronous_Zone_Query_Volume_Report_Response_DTO"></a>Synchronous Zone Query Volume Report Response DTO</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_90" style="width: 157px;" />
+                                        <col class="col_179" style="width: 686px;" />
+                                        <col class="col_168" />
+                                        <thead>
+                                            <tr>
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Response Body</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Description</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">zoneName</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The name of the zone.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">accountName</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The name of the account.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">rspTotal</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">tcpTotal</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total TCP responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">udpTotal</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total UDP responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">ipv4Total</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total IPv4 responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">ipv6Total</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total IPv6 responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">ipv4tcpTotal</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total IPv4 TCP responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">ipv4udpTotal</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total IPv4 UDP responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">ipv6tcpTotal</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total IPv6 TCP responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">ipv6udpTotal</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of total IPv6 UDP responses between the StartDate and the EndDate across all record types.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordA</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of A records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordA6</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of A6 records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordAAAA</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of AAAA records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordAny</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of ANY records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordAxfr</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of AXFR records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordCert</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of CERT records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordCname</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of CNAME records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordDlv</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of DLV records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordDnskey</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of DNSKEY records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordHinfo</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of HINFO records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordIpseckey</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of IPSECKEY records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordIxfr</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of IXFR records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordLoc</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of LOC records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordMf</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of MF records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordNaptr</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of NAPTR records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordMx</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of MX records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordNs</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of NS records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordNsec</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of NSEC records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordNsec3</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of NSEC3 records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordNsec3Param</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of NSEC3PARAM records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordRp</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of RP records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordPtr</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of PTR records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordRrsig</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of RRSIG records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordSoa</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of SOA records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordSpf</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of SPF records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordSrv</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of SRV records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordSshfp</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of SSHFP records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordTa</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of TA records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordTsig</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of TSIG records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordTkey</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of TKEY records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">recordTxt</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Count of TXT records. </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>recordHttps</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Count of HTTPS records.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Long</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>recordSvcb</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Count of SVCB records.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Long</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText">&#160;</p>
+                                    <p class="BodyText"><b>Parameters</b>: Can include the following:</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_67" style="width: 80px;" />
+                                        <col class="col_176" style="width: 643px;" />
+                                        <col class="col_28" style="width: 102px;" />
+                                        <thead>
+                                            <tr>
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Parameter</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Description</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="td_21" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText">sort</p>
+                                                </td>
+                                                <td class="td_22" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>The sort column used to order the list. The valid values are:</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li>
+                                                            <p>zoneName</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>nxdomainCount</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>servfailCount</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>rspTotal</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p>Example:</p>
+                                                    <p class="Code">/reports/dns_resolution/query_volume/zone?sort=zoneName:ASC</p>
+                                                    <p class="TableBody">
+                                                        <br />At a time, sorting is allowed only on single field. By default results will be sorted on zoneName in ascending order.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_40">
+                                                <td class="td_21" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText">offset</p>
+                                                </td>
+                                                <td class="td_22" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">This field is optional. If not specified, initial records will always be returned specific to&#160;limit and SortOrder.&#160;This parameter allows pagination on the reporting records retrieved. The offset will be the integer value that specifies the position of first result to be retrieved. Specify offset as 0 for first results to be retrieved.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Integer. Optional.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_40">
+                                                <td class="td_21" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>limit</p>
+                                                </td>
+                                                <td class="td_22" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">This field is optional. If not specified, the total number of records returned in the response will be equal to the default value 1000.&#160;This parameter allows pagination on the reporting records retrieved. The limit will be the integer value that specifies the maximum number of results to be retrieved in response.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Integer.<br />Optional.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_40">
+                                                <td class="td_21" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>filter</p>
+                                                </td>
+                                                <td class="td_22" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>The query used to construct the list. Query operators are:
+
+</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>zoneName â Name of the zone</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>accountName â Name of account</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>startDate â Start Date from which the results needs to be fetched. By default it will be 1st of the previous month. It cannot be older than 13 months.</p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>endDate â End Date till which the results needs to be fetched. By default it will be 7th day of previous month. It cannot be older than 13 months.
+</p>
+                                                        </li>
+                                                    </ol>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>Integer.<br />Optional.</p>
+                                                    <p>&#160;</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText"><b>Body</b>: None</p>
+                                    <h3 class="Heading3">Response Link Headers</h3>
+                                    <p class="Caption"><a name="Response_Link_Headers"></a>Response Link Headers</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_168" />
+                                        <col class="col_178" />
+                                        <thead>
+                                            <tr>
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Field</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Description</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_43">
+                                                <td class="td_21" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">Link</p>
+                                                </td>
+                                                <td class="td_22" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="p_22" style="text-align: left;">Relative URL to next page of report if available:</p>
+                                                    <p class="p_23" style="text-align: left;">POST &lt;/v1/reports/dns_resolution/query_volume/zone?offset=8&amp;limit=10&gt;; rel="next" </p>
+                                                    <p class="p_24" style="text-align: left;">Relative URL to previous page of report if available:</p>
+                                                    <p class="BodyText_12" style="text-align: left;">&lt;/v1/reports/dns_resolution/query_volume/zone?offset=0&amp;limit=10&gt;; rel="previous"</p>
+                                                    <p class="BodyText_12" style="text-align: left;">When using the next or previous link header to retrieve report data, you must perform another POST call, and include the original body content (if any) and new query parameters (such as offset and limit). </p>
+                                                    <p class="BodyText_12" style="text-align: left;">When continuing to use subsequent Link Headers to retrieve additional results, you must continue to perform the POST call per link header to retrieve the next set of report details.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_39">
+                                                <td class="td_21" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">Limit</p>
+                                                </td>
+                                                <td class="td_22" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">Specify the maximum number of records in requested response. Cannot be greater than maximum allowed limit. Currently maximum allowed limit is 100k.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_23">
+                                                <td class="td_21" style="font-weight: bold;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_34">Results</p>
+                                                </td>
+                                                <td class="td_22" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">Total rows in the report response.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="Examples">&#160;</p>
+                                    <p class="Examples">JSON Example: Synchronous Zone Query Volume Report Response Details</p>
+                                    <p class="Code">[</p>
+                                    <p class="Code" style="text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-indent: 1in;">"zoneName": "testzone1.com.",</p>
+                                    <p class="Code" style="text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-indent: 1in;">"rspTotal": 535,</p>
+                                    <p class="Code" style="text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"udpTotal": 535,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4Total": 344,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6Total": 191,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4udpTotal": 344,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6udpTotal": 191,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA": 10,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAAAA": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCname": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNs": 33,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordPtr": 492,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSoa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"nxdomainCount": 527,</p>
+                                    <p class="Code" style="text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"noerrorCount": 8</p>
+                                    <p class="Code" style="text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-indent: 1in;">"zoneName": "testzone2.com.",</p>
+                                    <p class="Code" style="text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-indent: 1in;">"rspTotal": 493,</p>
+                                    <p class="Code" style="text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"udpTotal": 493,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4Total": 303,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6Total": 190,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4udpTotal": 303,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6udpTotal": 190,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA": 12,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAAAA": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCname": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNs": 88,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordPtr": 391,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSoa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"nxdomainCount": 459,</p>
+                                    <p class="Code" style="text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"noerrorCount": 34</p>
+                                    <p class="Code" style="text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-indent: 1in;">"zoneName": "testzone3.com.",</p>
+                                    <p class="Code" style="text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-indent: 1in;">"rspTotal": 431,</p>
+                                    <p class="Code" style="text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"udpTotal": 431,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4Total": 173,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6Total": 258,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4udpTotal": 173,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6udpTotal": 258,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA": 5,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAAAA": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCname": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNs": 24,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordPtr": 400,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSoa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"nxdomainCount": 423,</p>
+                                    <p class="Code" style="text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"noerrorCount": 8</p>
+                                    <p class="Code" style="text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-indent: 1in;">"zoneName": "testzone4.com.",</p>
+                                    <p class="Code" style="text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-indent: 1in;">"rspTotal": 524,</p>
+                                    <p class="Code" style="text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"udpTotal": 524,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4Total": 322,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6Total": 202,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4udpTotal": 322,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6udpTotal": 202,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA": 11,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAAAA": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCname": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNs": 18,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordPtr": 494,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSoa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"nxdomainCount": 520,</p>
+                                    <p class="Code" style="text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"noerrorCount": 4</p>
+                                    <p class="Code" style="text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-indent: 1in;">"zoneName": "testzone5.com.",</p>
+                                    <p class="Code" style="text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-indent: 1in;">"rspTotal": 215,</p>
+                                    <p class="Code" style="text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"udpTotal": 215,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4Total": 133,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6Total": 82,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv4udpTotal": 133,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"ipv6udpTotal": 82,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAAAA": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordCname": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNs": 1,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordPtr": 213,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSoa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"nxdomainCount": 213,</p>
+                                    <p class="Code" style="text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-indent: 1in;">"noerrorCount": 2</p>
+                                    <p class="Code" style="text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"zoneName": "testzone6.com.",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"rspTotal": 294,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"udpTotal": 294,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4Total": 107,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6Total": 187,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4udpTotal": 107,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6udpTotal": 187,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA": 11,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAAAA": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCname": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNs": 30,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordPtr": 251,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSoa": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"nxdomainCount": 286,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"noerrorCount": 8</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"zoneName": "testzone7.com.",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"rspTotal": 659,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"udpTotal": 659,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4Total": 375,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6Total": 284,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4udpTotal": 375,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6udpTotal": 284,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA": 75,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAAAA": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCname": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNs": 25,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordPtr": 556,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSoa": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"nxdomainCount": 651,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"noerrorCount": 8</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"zoneName": "testzone8.com.",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"rspTotal": 96263,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"udpTotal": 96263,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4Total": 69678,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6Total": 26585,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4udpTotal": 69678,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6udpTotal": 26585,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA": 4490,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAAAA": 98,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAny": 20,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCname": 197,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNs": 7522,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordPtr": 83494,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSoa": 1,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"nxdomainCount": 4340,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"noerrorCount": 91923</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"zoneName": "testzone9.com.",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"rspTotal": 24247,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"udpTotal": 24247,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4Total": 17972,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6Total": 6275,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4udpTotal": 17972,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6udpTotal": 6275,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA": 1539,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAAAA": 84,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCname": 45,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNs": 2536,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordPtr": 19924,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSoa": 8,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"nxdomainCount": 1839,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"noerrorCount": 22408</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">},</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">{</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"zoneName": "testzone10.com.",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"accountName": "account1",</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"rspTotal": 21235,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"udpTotal": 21235,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4Total": 15830,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6Total": 5405,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv4udpTotal": 15830,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6tcpTotal": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"ipv6udpTotal": 5405,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA": 557,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordA6": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAAAA": 18,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAny": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordAxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCert": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordCname": 53,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDlv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordDnskey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordHinfo": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIpseckey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordIxfr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordLoc": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNaptr": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordMx": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNs": 2440,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordNsec3Param": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordPtr": 18053,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordRrsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSoa": 3,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSpf": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSrv": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordSshfp": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTa": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTsig": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTkey": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"recordTxt": 0,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordHttps": 7,</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"recordSvcb": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"refusedCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"notimpCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"nxdomainCount": 1788,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"servfailCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"formerrCount": 0,</p>
+                                    <p class="Code" style="text-align: left;text-indent: 1in;">"noerrorCount": 19447</p>
+                                    <p class="Code" style="text-align: left;text-indent: 0.5in;">}</p>
+                                    <p class="Code">]</p>
+                                    <p class="BodyText">&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

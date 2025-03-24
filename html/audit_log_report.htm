@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5___Side_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="REST API|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Audit Log Report</title>
+        <link href="../../Resources/Stylesheets/MSP_User_Guide.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../News and Updates.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h2 class="Heading2">Audit Log Report</h2>
+                                    <p class="BodyText">Unlike the <a href="Projected Query Volume Report.htm" style="color: #ffa500;" class="MCXref xref">Projected Query Volume Report</a>, <a href="Zone Query Volume Report.htm" style="color: #ffa500;" class="MCXref xref">Zone Query Volume Report</a>, and the <a href="Reporting APIs.htm" style="color: #ffa500;" class="MCXref xref">Reporting APIs</a>, the Audit Log Report does not require the usage of the Report RequestID to generate the request for the report, and subsequently the return of the report. When an Audit Log Report is requested, the detailed report is returned to the user immediately.</p>
+                                    <table class="table_1" style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_6" style="width: 54pt;">
+                                        </col>
+                                        <col class="col_7" style="width: 754px;">
+                                        </col>
+                                        <tr class="tr_47">
+                                            <td class="td_39">
+                                                <p class="NOTEText">
+                                                    <img src="../../Resources/Images/Rest-API_User_Guide/Introduction_66x77.png" class="img_2" style="width: 66;height: 77;">
+                                                    </img>
+                                                </p>
+                                            </td>
+                                            <td class="td_35" style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="Tablebullet_6">The Audit Log Report can be returned in a .CSV format, but will require an additional step beyond the default JSON requirements. In the header section, you will need to include the additional field: <b>Accept: text/csv</b>. </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <h3 class="Heading3">Requesting Audit Log Report</h3>
+                                    <p class="BodyText"><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?filter=any_search_param&amp;limit=any_integer</p>
+                                    <p class="p_13" style="text-align: left;">&#160;</p>
+                                    <p class="BodyText"><b>Parameters</b>: Must contain a <span class="CrossReference"><a href="#Audit_Log_Query_Parameters" class="ParaTextOnly MCXref xref xrefParaTextOnly">Audit Log Query Parameters</a></span>.</p>
+                                    <h3 class="Heading3"><a name="Audit"></a>Audit Log Query Parameters DTO</h3>
+                                    <p class="Caption"><a name="Audit_Log_Query_Parameters"></a>Audit Log Query Parameters</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_56" style="width: 209px;">
+                                        </col>
+                                        <col class="col_188" style="width: 623px;">
+                                        </col>
+                                        <col class="col_189">
+                                        </col>
+                                        <thead>
+                                            <tr>
+                                                <th class="th_10" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_7">Field</p>
+                                                </th>
+                                                <th class="th_15" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_7">Description</p>
+                                                </th>
+                                                <th class="th_15" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_15">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_5">
+                                                <td class="td_23" style="text-align: left;vertical-align: middle;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText"><b>filter</b>
+                                                    </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_35">Defines the filter criteria for Audit Log.</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li>
+                                                            <p class="Tablebullet"><b>accounts</b> â Comma-separated list of account names. Default value is <b>None</b>, which will return ALL accounts of the logged in user.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet"><b>users</b> -&#160;Comma-separated list of user names. Default value is <b>None</b>, which will return ALL users.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet"><b>change_type</b> â The type of change to display. Valid values of change_type can be obtained using <span class="CrossReference"><a href="#Audit_Log_Query_Filters" class="ParaTextOnly MCXref xref xrefParaTextOnly">Audit Log Query Filters</a></span>. Default value is None, which will return all change_type values.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet"><b>object_type</b> â The type of object to display. Valid values of object_type can be obtained using <span class="CrossReference"><a href="#Audit_Log_Query_Filters" class="ParaTextOnly MCXref xref xrefParaTextOnly">Audit Log Query Filters</a></span>. Default value is None, which will return all object_type values.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet"><b>object_name</b> â The name of the object. Default value is None, which will return all object_name values.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet"><b>parent_name</b> â The name of the parent object. Default value is <b>None</b>, which will return all parent_name values. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet"><b>date_range</b> â The specific date range to filter the results by. Date ranges can be provided in the following format:</p>
+                                                            <ul style="list-style-type: circle;">
+                                                                <li>
+                                                                    <p class="Tablebullet">15m = 15 minutes from the current date.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet">5h = 5 hours from the current date.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet">30d = 30 days from the current date.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet">5w = The last 5 weeks from the current date.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet">1month = The last calendar month from the current date.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="Tablebullet">{start_date â {end_date} = Provide a specific date range in GMT format. (yyyyMMddHHmmss) </p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>change_comment</b> - The text fragment of Change Comments search for. Special characters need to be URL encoded. </p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>When using a colon (:) as a search paramter for the Audit Log Report, â/: â (slash colon) is required instead of just a colon ( <b>:</b> ). </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Search criteria is case sensitive, and will be returned on a partial match (all records containing your search criteria will be returned).</p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>Example URL encoded - "Special change @ &amp; # comment" would be Special%20change%20%40%20%26%20%23%20comment</p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_5">
+                                                <td class="td_23" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_8"><b>limit</b>
+                                                    </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_35">Allows for pagination of the Audit records received. Maximum value for results received is 250. Minimum is 1.</p>
+                                                    <p class="BodyText_35">Default value is 50.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="BodyText_12">Integer.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="BodyText"><b>Body</b>: None</p>
+                                    <p class="BodyText_18"><b>Response</b>: If task completes, Status Code 200 OKis returned with an <span class="CrossReference"><a href="#Audit_Log_Response_Parameters" class="ParaTextOnly MCXref xref xrefParaTextOnly">Audit Log Response Parameters</a></span>,and a response header containing the Link Header having URLS of nextand previous pages as applicable. </p>
+                                    <h3 class="Heading3">Audit Log Response DTO</h3>
+                                    <p class="Caption"><a name="Audit_Log_Response_Parameters"></a>Audit Log Response Parameters</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_15">
+                                        </col>
+                                        <col class="col_162" style="width: 623px;">
+                                        </col>
+                                        <col class="col_159">
+                                        </col>
+                                        <thead>
+                                            <tr class="tr_29">
+                                                <th class="th_19" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Field</p>
+                                                </th>
+                                                <th class="th_18" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Description</p>
+                                                </th>
+                                                <th class="th_18" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_29">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_2">objectType</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The type of the object that is being audited.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_24">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">changeType</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Audited action.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_14">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">object</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The name of the object that is being audited.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_14">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">user</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The name of the user who performed the action.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_24">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">ipAddress</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">IP address of user or logic who performed the action.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_24">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">changeTime</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Date and Time when action was performed.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_14">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">account</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">Account name from which audit was done.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_24">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">parent</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The name of the parent object.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_24">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">detail</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The detail of the audit record.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">AuditLogDetail.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_24">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>changeComment</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>The details of the most recent comment provided.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p>String.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="Caption">&#160;</p>
+                                    <p class="Caption"><a name="Audit_Log_Detail_Parameters"></a>Audit Log Detail Parameters</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_15" style="width: 174px;">
+                                        </col>
+                                        <col class="col_180">
+                                        </col>
+                                        <col class="col_165">
+                                        </col>
+                                        <tr class="tr_13">
+                                            <td class="td_34" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="code_6_1">Field</p>
+                                            </td>
+                                            <td class="td_42" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="code_6_1">Description</p>
+                                            </td>
+                                            <td class="td_42" style="color: #ffffff;font-weight: bold;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="code_6_1">Type</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tr_27">
+                                            <td class="td_23" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="code_6_3"><b>changes</b>
+                                                </p>
+                                            </td>
+                                            <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="TableBody">The list of details of changes that take place by CRUD operation.</p>
+                                            </td>
+                                            <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                <p class="TableBody">List of <a href="#Audit_Log_Change_Detail_Parameters" style="color: #ffa500;text-decoration: none;" class="MCXref xref">Audit Log Change Detail Parameters</a>.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p class="Caption">&#160;</p>
+                                    <p class="Caption"><a name="Audit_Log_Change_Detail_Parameters"></a>Audit Log Change Detail Parameters</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_15" style="width: 69px;">
+                                        </col>
+                                        <col class="col_162" style="width: 752px;">
+                                        </col>
+                                        <col class="col_159">
+                                        </col>
+                                        <thead>
+                                            <tr class="tr_29">
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Field</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Description</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_2">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">name</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The&#160;name of the&#160;attribute that was added/updated/deleted.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_5">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">from</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The attribute "from" represents the old value of attribute "name" in case of update/delete operation.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_5">
+                                                <td class="td_23" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">to</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">The attribute "to" represents the new value of attribute "name" in case of update/add operation.</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="Caption">&#160;</p>
+                                    <p class="Caption"><a name="Response_Headers"></a>Response Headers</p>
+                                    <table class="table_1" style="width: 60%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_15" style="width: 93px;">
+                                        </col>
+                                        <col class="col_190">
+                                        </col>
+                                        <thead>
+                                            <tr class="tr_44">
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Field</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_1">Description</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_52">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">Link</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="p_23"><b>Relative URL to next page of report if available</b>:</p>
+                                                    <p class="Code">&lt;v1/reports/dns_configuration/audit?filter=filter_spec&amp;cursor=cursor_spec&amp;Limit=limit_spec&amp;cursorOperation=NEXT&gt;; rel="next"</p>
+                                                    <p class="p_27"><b>Relative URL to previous page of report if available</b>:</p>
+                                                    <p class="Code">&lt;v1/reports/dns_configuration/audit?filter=filter_spec&amp;cursor=cursor_spec&amp;Limit=limit_spec&amp;cursorOperation=PREVIOUS&gt;; rel="previous"</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_14">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">Limit</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_4">The limit specified in audit log query parameter</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_14">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_3">Results</p>
+                                                </td>
+                                                <td class="td_29" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;">
+                                                    <p class="code_6_4">Total rows in the report page</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="Examples">&#160;</p>
+                                    <p class="Examples">JSON Example: Audit Log Query Parameters Successful Response</p>
+                                    <p class="Code">{&#160;</p>
+                                    <p class="Code">&#160;&#160;&#160;"auditRecords":[&#160;</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;{&#160;</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"objectType":&#160;"TXT"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"changeType":&#160;"MODIFY"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"object":&#160;"date.gmon-a.invalid."</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"user":&#160;"gmonitor"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ipAddress":&#160;"209.173.57.233"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"changeTime":&#160;"2016-06-12 21:48:02.0"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"account":&#160;"GTV8"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"parent":&#160;null</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"detail": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"changes": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name":&#160;"Comments"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"from":&#160;"Mon Jun 13 03.15.02 2016"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"to":&#160;"Mon Jun 13 03.18.02 2016"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"others": [0]</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;]</p>
+                                    <p class="Code">}</p>
+                                    <p><b>Errors</b>: An error code is returned under the following conditions:</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p class="Bulletedtext">If the âlimitâ value is not between 0 and 250.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">If the âfilterâ parameterâs value is syntactically incorrect. The value must be a sequence of âkey:valueâ pair where each pair is separated by â::â.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">If invalid filter âkeyâ is supplied in the request.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">If the date range provided in the filter value is not in the format of âyyyyMMddHHmmssâ.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">If the start date given in the date range is greater than the end date.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Bulletedtext">If the logged in user is not authorized for the accounts given in the filter parameter.</p>
+                                        </li>
+                                    </ul>
+                                    <p class="Examples">&#160;</p>
+                                    <p class="Examples">JSON Example: Audit Log Example Requests</p>
+                                    <p class="BodyText_36"><b>Example - List latest 50 Audit Records</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit HTTP/1.1&#160;</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p class="Code_11">If filter query parameter is not given then by&#160;default<span class="span_37">&#160;</span>last 24h audit records are returned.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Code_11">The records retrieved will be sorted in DESC order</p>
+                                        </li>
+                                        <li>
+                                            <p class="Code_11">The&#160;default<span class="span_37">&#160;</span>values of limit is&#160;50.</p>
+                                        </li>
+                                    </ul>
+                                    <p class="BodyText"><b>Example â List latest 250 Audit Records</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?limit=250</p>
+                                    <p class="BodyText_2">&#160;</p>
+                                    <p class="BodyText"><b>Example â List Audit Records for a specific date range</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?filter=date_range:20160302290813-20160402193020</p>
+                                    <p class="BodyText_2">&#160;</p>
+                                    <p class="BodyText"><b>Example â List Audit Records for a specific User</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?filter=users:ABLE</p>
+                                    <p class="BodyText_2">&#160;</p>
+                                    <p class="BodyText"><b>Example â List Audit Records for a specific object name</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?filter=object_name:127.0.0.1</p>
+                                    <p class="BodyText_2">&#160;</p>
+                                    <p class="BodyText"><b>Example â List Audit Records for a specific object name and change type</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?filter=object_name:127.0.0.1::change_type:ZONE_TRANSFER_FAILURE</p>
+                                    <p class="BodyText_2">&#160;</p>
+                                    <p class="BodyText"><b>Example â List Audit Records for a specific parent name</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?filter=parent_name:test-domain.com.</p>
+                                    <p class="BodyText_2">&#160;</p>
+                                    <p class="BodyText"><b>Example â List Audit Records for a specific parent name and change type</b>
+                                    </p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit?filter=parent_name:test-domain.com.::change_type:ZONE_TRANSFER_FAILURE</p>
+                                    <h3 class="Heading3"><a name="AXFR_Failure_Reporting_Audit_Log"></a>AXFR&#160;Failure Reporting Audit Log</h3>
+                                    <p>The <b>AXFR Failure Reporting API</b> allows you to generate detailed reports on Zone Transfer Failures (AXFR) across your authoritative DNS zones. This API is designed to help DNS administrators and operators who utilize DNS redundancy or manage multiple zones, providing visibility into transfer failures that could impact zone propagation and redundancy.</p>
+                                    <p>The primary filter parameter used in this API is <b>change_type: ZONE_TRANSFER_FAILURE</b>. The following Method examples returns the following details:</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p><b>Date Range</b>: 03/26/2024 â 09/23/2024</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Change Type</b>: Zone_Transfer_Failure</p>
+                                        </li>
+                                        <li>
+                                            <p>Returned result <b>limit</b> : 50</p>
+                                        </li>
+                                    </ul>
+                                    <p><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit? filter=date_range:20240326183000-20240923133537::change_type:ZONE_TRANSFER_FAILURE&amp;limit=50</p>
+                                    <p><b>Body:</b>&#160;None</p>
+                                    <p><b>Parameters</b>: Must contain an <a href="#Audit" style="color: #ffa500;text-decoration: none;" class="MCXref xref">Audit Log Query Parameters DTO</a>.</p>
+                                    <p><b>Response</b>: If task completes, Status Code 200 OK is returned with an Audit Log Response DTO, and a response header containing the Link Header having URLS of next and previous pages as applicable.</p>
+                                    <p><b>Errors</b>: An error code is returned under the following conditions:</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p>If the âlimitâ value is not between 0 and 250.</p>
+                                        </li>
+                                        <li>
+                                            <p>If the âfilterâ parameterâs value is syntactically incorrect. The value must be a sequence of âkey:valueâ pair where each pair is separated by â :: â(colon).</p>
+                                        </li>
+                                        <li>
+                                            <p>If invalid filter âkeyâ is supplied in the request.</p>
+                                        </li>
+                                        <li>
+                                            <p>If the date range provided in the filter value is not in the format of â<b>yyyyMMddHHmmss</b>â.</p>
+                                        </li>
+                                        <li>
+                                            <p>If the start date given in the date range is greater than the end date.</p>
+                                        </li>
+                                        <li>
+                                            <p>If the logged in user is not authorized for the accounts given in the filter parameter.</p>
+                                        </li>
+                                    </ul>
+                                    <p class="Examples">JSON Example: AXFR Failure Reporting Audit Log Response</p>
+                                    <p class="Code">{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;"auditRecords": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"objectType": "PRIMARY_NAMESERVER",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"changeType": "ZONE_TRANSFER_FAILURE",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"object": "44.194.226.84",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"user": "neustar1",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"ipAddress": "23.21.206.251",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"changeTime": "2024-09-23 11:19:00.0",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"account": "GTV8",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"parent": "10records-50.invalid.",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"detail": {</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"others": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "Failure Reason",</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"value": "Connection timed out"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;]</p>
+                                    <p class="Code">}</p>
+                                    <p>&#160;</p>
+                                    <h3 class="Heading3"><a name="Audit_Log_Query_Filters"></a>Audit Log Query Filters</h3>
+                                    <p class="BodyText"><b>Method and URI</b>:</p>
+                                    <p class="Code">GET https://api.ultradns.com/reports/dns_configuration/audit/filters</p>
+                                    <p><b>Parameters</b>: The following Query Parameter will be used:</p>
+                                    <p class="Caption"><a name="Audit_Log_Query_Filters_Parameter"></a>Audit Log Query Parameter</p>
+                                    <table class="table_1" style="border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_1" style="width: 86pt;">
+                                        </col>
+                                        <col class="col_68" style="width: 698px;">
+                                        </col>
+                                        <col class="col_159">
+                                        </col>
+                                        <thead>
+                                            <tr>
+                                                <th class="th_10" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="BodyText_7">Field</p>
+                                                </th>
+                                                <th class="th_15" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="BodyText_7">Description</p>
+                                                </th>
+                                                <th class="th_15" style="text-align: left;color: #ffffff;background-color: #7f7f7f;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="BodyText_7">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_5">
+                                                <td class="td_23" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="BodyText_8"><b>dateRange</b>
+                                                    </p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="BodyText_12">The specific date range to filter the results by. Date ranges can be provided in the following format:</p>
+                                                    <ul style="list-style-type: square;">
+                                                        <li>
+                                                            <p class="Tablebullet">15m = 15 minutes from the current date.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">5h = 5 hours from the current date.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">30d = 30 days from the current date.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">5w = The last 5 weeks from the current date.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="Tablebullet">1month = The last calendar month from the current date.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="BodyText_12">{start_date â {end_date} = Provide a specific date range in GMT format. (yyyyMMddHHmmss)</p>
+                                                    <p class="BodyText_35"><b>Example</b>: 20160321123010 - 20160401113312</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="BodyText_12">String.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="font-weight: normal;"><b>Body</b>: None</p>
+                                    <p><b>Response</b>: If task completes, Status code 200 OK is returned with an <span class="CrossReference"><a href="#Audit_Log_Query_Filter_Response_Parameters" class="ParaTextOnly MCXref xref xrefParaTextOnly">Audit Log Query Filter Parameters</a></span>.</p>
+                                    <h3 class="Heading3">Audit Log Query Filter Response DTO</h3>
+                                    <p class="Caption"><a name="Audit_Log_Query_Filter_Response_Parameters"></a>Audit Log Query Filter Parameters</p>
+                                    <table class="table_1" style="width: 70%;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;margin-left: 0;margin-right: auto;">
+                                        <col class="col_1">
+                                        </col>
+                                        <col class="col_68">
+                                        </col>
+                                        <col class="col_191">
+                                        </col>
+                                        <thead>
+                                            <tr class="tr_25">
+                                                <th class="th_10" style="color: #ffffff;text-align: left;background-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="code_6_1">Field</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="code_6_1">Description</p>
+                                                </th>
+                                                <th class="th_15" style="color: #ffffff;text-align: left;background-color: #7f7f7f;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="code_6_1">Type</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr_27">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="TableBody_3">key</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="TableBody">Key for audit url.&#160;These keys could be value of object_type, change_type etc.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr_41">
+                                                <td class="td_21" style="font-weight: bold;text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="TableBody_3">url</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="TableBody">The example audit url to search records based the given key.</p>
+                                                </td>
+                                                <td class="td_22" style="text-align: left;vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 4px;padding-bottom: 4px;border-left-style: solid;border-left-width: 1px;border-left-color: #7f7f7f;border-right-style: solid;border-right-width: 1px;border-right-color: #7f7f7f;border-top-style: solid;border-top-width: 1px;border-top-color: #7f7f7f;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #7f7f7f;">
+                                                    <p class="TableBody">String.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="Examples">&#160;</p>
+                                    <p class="Examples">JSON Example: Audit Log Query Filters Response</p>
+                                    <p class="Code">{&#160;</p>
+                                    <p class="Code">&#160;&#160;&#160;"filters": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"objectTypes": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"A"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=object_type:A"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"SOA"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=object_type:SOA"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"NS"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=object_type:NS"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;"changeTypes": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"ADD"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=change_type:ADD"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"FAILED_LOGIN"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=change_type<br></br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; :FAILED_LOGIN"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"users": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"gmonitor"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=user:gmonitor"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"ketkitest"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=user:ketkitest"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "key":&#160;"sswamy"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=user:sswamy"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"accounts": [</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"GTV8"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url":&#160;"/reports/dns_configuration/audit?filter=account:GTV8"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"key":&#160;"sswamy"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url":&#160;"/reports/dns_configuration/audit?filter=account:sswamy"</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+                                    <p class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</p>
+                                    <p class="Code">&#160;&#160;&#160;]</p>
+                                    <p class="Code">}</p>
+                                    <p><b>Errors</b>: An error code is returned under the following conditions</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>
+                                            <p class="Bulletedtext">Invalid X-User {userName} supplied in the request header. This user is not linked with any account.â</p>
+                                        </li>
+                                    </ul>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
